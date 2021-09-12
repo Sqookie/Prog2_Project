@@ -8,4 +8,4 @@
 
 2021.09.12
 * Added dropdown menu
-* Added 3 languages
+* Added 3 languages(English, Hungarian, Chinese)
