@@ -45,6 +45,6 @@
         "element_envoy" => "Element Envoy",
 
         /* Copyright */
-        "copyright" => "&copy; 2021. - All rights reserved!",
+        "copyright" => "&copy; " . date("Y") . ". - All rights reserved!",
     );
 ?>

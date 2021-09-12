@@ -21,7 +21,7 @@ body
 
 .pad_right
 {
-    padding-right: 25px !important;
+    padding-right: 16px !important;
 }
 
 .active
@@ -36,13 +36,6 @@ body
 {
 	background-color: #212529 !important;
 	color: white !important;
-	font-weight: bold !important;
-}
-
-.item_active:hover
-{
-	background-color: #f8f9fa !important;
-	color: black !important;
 	font-weight: bold !important;
 }
 

@@ -42,9 +42,9 @@
                             <?php echo $lang['language'] ?>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item <?php if($_GET['lang'] == "en") {echo "item_active";} ?>" href="index.php?lang=en"><?php echo $lang['lang_en'] ?></a></li>
-                            <li><a class="dropdown-item <?php if($_GET['lang'] == "hu") {echo "item_active";} ?>" href="index.php?lang=hu"><?php echo $lang['lang_hu'] ?></a></li>
-                            <li><a class="dropdown-item <?php if($_GET['lang'] == "cn") {echo "item_active";} ?>" href="index.php?lang=cn"><?php echo $lang['lang_cn'] ?></a></li>
+                            <li><a class="dropdown-item <?php if($_GET['lang'] == "en") {echo "item_active";} ?>" href="weapons.php?lang=en"><?php echo $lang['lang_en'] ?></a></li>
+                            <li><a class="dropdown-item <?php if($_GET['lang'] == "hu") {echo "item_active";} ?>" href="weapons.php?lang=hu"><?php echo $lang['lang_hu'] ?></a></li>
+                            <li><a class="dropdown-item <?php if($_GET['lang'] == "cn") {echo "item_active";} ?>" href="weapons.php?lang=cn"><?php echo $lang['lang_cn'] ?></a></li>
                         </ul>
                     </li>
 

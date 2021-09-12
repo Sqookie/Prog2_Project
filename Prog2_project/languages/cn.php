@@ -45,6 +45,6 @@
         "element_envoy" => "越界者",
 
         /* Copyright */
-        "copyright" => "&copy; 2021. - 曲奇君有限公司 版权所有",
+        "copyright" => "&copy; " . date("Y") . ". - 曲奇君有限公司 版权所有",
     );
 ?>

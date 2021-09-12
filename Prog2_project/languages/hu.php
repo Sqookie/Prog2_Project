@@ -45,6 +45,6 @@
         "element_envoy" => "Elemi követ",
 
         /* Copyright */
-        "copyright" => "&copy; 2021. - Minden jog fenntartva!",
+        "copyright" => "&copy; " . date("Y") . ". - Minden jog fenntartva!",
     );
 ?>
