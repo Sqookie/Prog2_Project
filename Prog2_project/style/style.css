@@ -1,3 +1,8 @@
+body
+{
+	background-color: #f8f9fa;
+}
+
 .arr{
 	font-weight: bold;
 	font-size: 20px;
@@ -16,13 +21,15 @@
 
 .pad_right
 {
-    padding-right: 15px !important;
+    padding-right: 18px !important;
 }
 
 .active
 {
 	color:white !important;
 }
+
+
 
 /* Dropdown menu */
 .item_active
@@ -48,4 +55,9 @@
 {
 	color: rgba(255,255,255,.55);
 	font-weight: bold;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	color: black;
+	background-color: #f8f9fa !important;
 }
