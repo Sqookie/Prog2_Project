@@ -13,5 +13,5 @@
             $_SESSION['lang'] = "en";
     }
 
-    require_once "languages/" . $_SESSION['lang']  . ".php"; 
+    require_once "languages/" . $_SESSION['lang']  . ".php";
 ?>

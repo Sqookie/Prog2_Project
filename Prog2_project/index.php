@@ -13,7 +13,6 @@
 
         <title><?php echo $lang['title'] ?></title>
     </head>
-
 <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -30,32 +29,12 @@
                         <a class="nav-link bold pad_right active" aria-current="page" href="index.php"><?php echo $lang['home'] ?></a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <?php echo $lang['weapon'] ?>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="handgun.php"><?php echo $lang['handgun'] ?></a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link bold pad_right" href="#"><?php echo $lang['weapon'] ?></a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <?php echo $lang['character'] ?>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link bold pad_right" href="#"><?php echo $lang['character'] ?></a>
                     </li>
 
                     <li class="nav-item dropdown">
