@@ -9,4 +9,7 @@
 2021.09.12
 * Added dropdown menu
 * Added 3 languages(English, Hungarian, Chinese)
-* Dropdown menu bug fixes
+* Fixed the nav-item bug
+
+2021.09.13
+* Fixed language dropdown menu bug
