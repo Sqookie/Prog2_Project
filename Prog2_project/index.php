@@ -1,7 +1,7 @@
 <?php
     include "config.php";
 
-    $curr_lang = $_SESSION['lang'];
+    $curr_lang = $_SESSION['lang']; 
 ?>
 
 <!doctype html>
@@ -54,6 +54,11 @@
             </div>
         </div>
     </nav>
+
+    <br>
+    <div class="row mx-0">
+        <?php echo $lang['home_introduce'] ?>
+    </div>
 
     <div class="container-fluid arr fixed-bottom"><?php echo $lang['copyright'] ?></div>
 

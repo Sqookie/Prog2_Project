@@ -24,11 +24,15 @@ body
     padding-right: 16px !important;
 }
 
+.pad_right_none
+{
+	padding-right: none !important;
+}
+
 .active
 {
 	color:white !important;
 }
-
 
 
 /* Dropdown menu */

@@ -44,6 +44,14 @@
         "interdimension_traveler" => "古代元素使",
         "element_envoy" => "越界者",
 
+        /* Home page */
+        "home_introduce" =>
+        '
+        <div class="col-md-12 px-2 bold">公司创建日期：2014年6月22号</div>
+        <div class="col-md-12 px-2 bold">安卓登录日期：2016年11月24号</div>
+        <div class="col-md-12 px-2 bold">苹果登录日期：2017年2月17号</div>
+        ',
+
         /* Copyright */
         "copyright" => "&copy; " . date("Y") . ". - 曲奇君有限公司 版权所有",
     );
