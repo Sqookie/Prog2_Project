@@ -47,9 +47,9 @@
         /* Home page */
         "home_introduce" =>
         '
-        <div class="col-md-12 px-2 bold">Company creation date：22nd June 2014</div>
-        <div class="col-md-12 px-2 bold">Android creation date：24th November 2016</div>
-        <div class="col-md-12 px-2 bold">Apple creation date：17th February 2017</div>
+        <div class="col-md-12 px-2 bold white">Company creation date：22nd June 2014</div>
+        <div class="col-md-12 px-2 bold white">Android creation date：24th November 2016</div>
+        <div class="col-md-12 px-2 bold white">Apple creation date：17th February 2017</div>
         ',
 
         /* Copyright */

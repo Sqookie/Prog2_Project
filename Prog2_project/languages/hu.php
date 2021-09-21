@@ -47,9 +47,9 @@
         /* Home page */
         "home_introduce" =>
         '
-        <div class="col-md-12 px-2 bold">Cég megalapítási ideje：2014 Június 22</div>
-        <div class="col-md-12 px-2 bold">Androidra fellépési ideje：2016 November 24</div>
-        <div class="col-md-12 px-2 bold">Applera fellépési ideje：2017 Február 14</div>
+        <div class="col-md-12 px-2 bold white">Cég megalapítási ideje：2014 Június 22</div>
+        <div class="col-md-12 px-2 bold white">Androidra fellépési ideje：2016 November 24</div>
+        <div class="col-md-12 px-2 bold white">Applera fellépési ideje：2017 Február 14</div>
         ',
 
         /* Copyright */

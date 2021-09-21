@@ -47,9 +47,9 @@
         /* Home page */
         "home_introduce" =>
         '
-        <div class="col-md-12 px-2 bold">公司创建日期：2014年6月22号</div>
-        <div class="col-md-12 px-2 bold">安卓登录日期：2016年11月24号</div>
-        <div class="col-md-12 px-2 bold">苹果登录日期：2017年2月17号</div>
+        <div class="col-md-12 px-2 bold white">公司创建日期：2014年6月22号</div>
+        <div class="col-md-12 px-2 bold white">安卓登录日期：2016年11月24号</div>
+        <div class="col-md-12 px-2 bold white">苹果登录日期：2017年2月17号</div>
         ',
 
         /* Copyright */
