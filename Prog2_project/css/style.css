@@ -1,0 +1,77 @@
+body
+{
+	background-image: url("../img/chillyroom_background.jpg");
+}
+
+.arr{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	background-color: #212529;
+	margin-top: 15px;
+	padding: 20px;
+	color: white;
+}
+
+.bold
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pad_right
+{
+    padding-right: 16px !important;
+}
+
+.pad_right_none
+{
+	padding-right: none !important;
+}
+
+.active
+{
+	color:white !important;
+}
+
+.white
+{
+	color: white;
+}
+
+/* Dropdown menu */
+.item_active
+{
+	background-color: #212529 !important;
+	color: white !important;
+	font-weight: bold !important;
+}
+
+.item_inactive
+{
+	background-color: #212529 !important;
+	color: rgba(255,255,255,.55) !important;
+	font-weight: bold !important;
+}
+
+.dropdown-menu
+{
+	background-color: #212529 !important;
+}
+
+.dropdown-item
+{
+	color: rgba(255,255,255,.55);
+	font-weight: bold;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	color: black !important;
+	background-color: #f8f9fa !important;
+}
+
+.dropdown-item.hover, .dropdown-item:hover
+{
+	color: black !important;
+	background-color: #f8f9fa !important;
+}
