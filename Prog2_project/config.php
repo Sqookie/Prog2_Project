@@ -14,4 +14,21 @@
     }
 
     require_once "languages/" . $_SESSION['lang']  . ".php";
+
+    
+    if(!isset($_SESSION['page']))
+        $_SESSION['page'] = "home";
+    else if(isset($_GET['page']) && $_SESSION['page'] != $_GET['page'] && !empty($_GET['page']))
+    {
+        if($_GET['page'] == "weapon")
+            $_SESSION['page'] = "weapon";
+        else if($_GET['page'] == "character")
+            $_SESSION['page'] = "character";
+        else if($_GET['page'] == "signin")
+            $_SESSION['page'] = "signin";
+        else if($_GET['page'] == "signout")
+            $_SESSION['page'] = "signout";
+        else if($_GET['page'] == "home")
+            $_SESSION['page'] = "home";
+    }
 ?>

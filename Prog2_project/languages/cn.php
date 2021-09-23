@@ -43,6 +43,16 @@
         "taoist" => "道士",
         "interdimension_traveler" => "古代元素使",
         "element_envoy" => "越界者",
+        
+        /* Sign in/out */
+        "signin" => "登录",
+        "registration" => "注册",
+        "username" => "用户名",
+        "email" => "邮箱",
+        "password" => "密码",
+        "password_again" => "二次密码",
+        "send" => "发送",
+        "signout" => "退出",
 
         /* Home page */
         "home_introduce" =>

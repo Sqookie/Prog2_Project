@@ -1,7 +1,16 @@
 <?php
+
+    session_start();
+
+    error_reporting(E_ALL ^ E_NOTICE);
+
+?>
+
+<?php
     include "config.php";
 
-    $curr_lang = $_SESSION['lang']; 
+    $curr_lang = $_SESSION['lang'];
+    $curr_page = $_SESSION['page'];
 ?>
 
 <!doctype html>
@@ -20,7 +29,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php?lang=<?php echo $curr_lang ?>">
+            <a class="navbar-brand" href="index.php?page=home&lang=<?php echo $curr_lang ?>">
                 <img src="img/logo.jpg" alt="Logo" width="45px"></img>
             </a>    
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,41 +37,180 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link bold pad_right <?php if(basename(__FILE__) == "index.php") {echo "active";} ?>" aria-current="page" href="index.php?lang=<?php echo $curr_lang ?>"><?php echo $lang['home'] ?></a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link bold pad_right <?php if(basename(__FILE__) == "weapon.php") {echo "active";} ?>"" href="weapon.php?lang=<?php echo $curr_lang ?>"><?php echo $lang['weapon'] ?></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link bold pad_right <?php if(basename(__FILE__) == "character.php") {echo "active";} ?>"" href="character.php?lang=<?php echo $curr_lang ?>"><?php echo $lang['character'] ?></a>
-                    </li>
-
+                <?php
+                /* Home page*/
+                if($_GET['page'] == 'home')
+                {
+                    echo
+                    '
+                        <li class="nav-item">
+                            <a class="nav-link bold pad_right active" href="index.php?page=home&lang='. "$curr_lang" .'">'. $lang['home'] .'</a>
+                        </li>
+                    ';
+                }
+                else
+                {
+                    echo
+                    '
+                        <li class="nav-item">
+                            <a class="nav-link bold pad_right" href="index.php?page=home&lang='. "$curr_lang" .'">'. $lang['home'] .'</a>
+                        </li>
+                    ';
+                }
+                /* Before sign in */
+                if($_SESSION['loggedin'] != 'yes')
+                {
+                    /* Sign in page */
+                    if($_GET['page'] == 'signin')
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right active" href="index.php?page=signin&lang='. "$curr_lang" .'">'. $lang['signin'] .'</a>
+                            </li>
+                        ';
+                    }
+                    else
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right" href="index.php?page=signin&lang='. "$curr_lang" .'">'. $lang['signin'] .'</a>
+                            </li>
+                        ';
+                    }
+                }
+                /* After sign in */
+                else
+                {   
+                    /* Weapon page */
+                    if($_GET['page'] == 'weapon')
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right active" href="index.php?page=weapon&lang='. "$curr_lang" .'">'. $lang['weapon'] .'</a>
+                            </li>
+                        ';
+                    }
+                    else
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right" href="index.php?page=weapon&lang='. "$curr_lang" .'">'. $lang['weapon'] .'</a>
+                            </li>
+                        ';
+                    }
+                    /* Character page */
+                    if($_GET['page'] == 'character')
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right active" href="index.php?page=character&lang='. "$curr_lang" .'">'. $lang['character'] .'</a>
+                            </li>
+                        ';
+                    }
+                    else
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right" href="index.php?page=character&lang='. "$curr_lang" .'">'. $lang['character'] .'</a>
+                            </li>
+                        ';
+                    }
+                    /* Sign out page */
+                    if($_GET['page'] == 'signout')
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right active" href="index.php?page=signout&lang='. "$curr_lang" .'">'. $lang['signout'] .'</a>
+                            </li>
+                        ';
+                    }
+                    else
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right" href="index.php?page=signout&lang='. "$curr_lang" .'">'. $lang['signout'] .'</a>
+                            </li>
+                        ';
+                    }
+                }
+                /* Language drop down menu */
+                echo
+                '
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <?php echo $lang['language'] ?>
+                            '. $lang['language'] .'
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item <?php if($curr_lang == "en") {echo "item_active";} ?>" href="index.php?lang=en"><?php echo $lang['lang_en'] ?></a></li>
-                            <li><a class="dropdown-item <?php if($curr_lang == "hu") {echo "item_active";} ?>" href="index.php?lang=hu"><?php echo $lang['lang_hu'] ?></a></li>
-                            <li><a class="dropdown-item <?php if($curr_lang == "cn") {echo "item_active";} ?>" href="index.php?lang=cn"><?php echo $lang['lang_cn'] ?></a></li>
+                ';        
+                    if($curr_lang == "en")
+                    {
+                        echo
+                        '
+                            <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
+                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
+                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
+                        ';
+                    }
+                    else if($curr_lang == "hu")
+                    {
+                        echo
+                        '
+                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
+                            <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
+                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
+                        ';
+                    }
+                    else if($curr_lang == "cn")
+                    {
+                        echo
+                        '
+                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
+                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
+                            <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
+                        ';
+                    }
+                echo    
+                '  
                         </ul>
                     </li>
-
+                ';
+                ?>
+                
                 </ul>
             </div>
         </div>
     </nav>
 
-    <br>
-    <div class="row mx-0">
-        <?php echo $lang['home_introduce'] ?>
-    </div>
+    <div class="container-fluid">
+		
+		<?php
+			
+			$l = mysqli_connect("localhost", "root", "", "prog2_project");
+		
+			switch($_GET["page"])
+			{
+				case 'weapon': include 'weapon.php'; break;
+				case 'character': include 'character.php'; break;
+                case 'signin': include 'signin.php'; break;
+				case 'signout': include 'signout.php'; break;
 
-
-    
+                default: include 'home.php'; break;
+			}
+		
+			mysqli_close($l);
+		
+		?>
+		
+	</div>
 
     <div class="container-fluid arr fixed-bottom"><?php echo $lang['copyright'] ?></div>
 

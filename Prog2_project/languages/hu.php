@@ -44,6 +44,16 @@
         "interdimension_traveler" => "Interdimenzionális utazó",
         "element_envoy" => "Elemi követ",
 
+        /* Sign in/out */
+        "signin" => "Bejelentkezés",
+        "registration" => "Regisztráció",
+        "username" => "Felhasználó név",
+        "email" => "E-mail",
+        "password" => "Jelszó",
+        "password_again" => "Jelszó újra",
+        "send" => "Küldés",
+        "signout" => "Kilépés",
+
         /* Home page */
         "home_introduce" =>
         '

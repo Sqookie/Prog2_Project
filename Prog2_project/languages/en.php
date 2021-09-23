@@ -44,6 +44,16 @@
         "interdimension_traveler" => "Interdimension Traveler",
         "element_envoy" => "Element Envoy",
 
+        /* Sign in/out */
+        "signin" => "Sign in",
+        "registration" => "Registration",
+        "username" => "Username",
+        "email" => "E-mail",
+        "password" => "Password",
+        "password_again" => "Password again",
+        "send" => "Send",
+        "signout" => "Sign out",
+
         /* Home page */
         "home_introduce" =>
         '
