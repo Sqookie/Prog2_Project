@@ -1,9 +1,7 @@
 <?php
-
     session_start();
 
     error_reporting(E_ALL ^ E_NOTICE);
-
 ?>
 
 <?php
@@ -59,7 +57,7 @@
                     ';
                 }
                 /* Before sign in */
-                if($_SESSION['loggedin'] != 'yes')
+                if($_SESSION['signedin'] != 'yes')
                 {
                     /* Sign in page */
                     if($_GET['page'] == 'signin')
@@ -151,33 +149,33 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 ';        
-                    if($curr_lang == "en")
-                    {
-                        echo
-                        '
-                            <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
-                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
-                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
-                        ';
-                    }
-                    else if($curr_lang == "hu")
-                    {
-                        echo
-                        '
-                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
-                            <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
-                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
-                        ';
-                    }
-                    else if($curr_lang == "cn")
-                    {
-                        echo
-                        '
-                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
-                            <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
-                            <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
-                        ';
-                    }
+                if($curr_lang == "en")
+                {
+                    echo
+                    '
+                        <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
+                        <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
+                        <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
+                    ';
+                }
+                else if($curr_lang == "hu")
+                {
+                    echo
+                    '
+                        <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
+                        <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
+                        <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
+                    ';
+                }
+                else if($curr_lang == "cn")
+                {
+                    echo
+                    '
+                        <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=en">'. $lang['lang_en'] .' </a></li>
+                        <li><a class="dropdown-item" href="index.php?page='. "$curr_page" .'&lang=hu">'. $lang['lang_hu'] .' </a></li>
+                        <li><a class="dropdown-item item_active" href="index.php?page='. "$curr_page" .'&lang=cn">'. $lang['lang_cn'] .' </a></li>
+                    ';
+                }
                 echo    
                 '  
                         </ul>
@@ -196,7 +194,7 @@
 			
 			$l = mysqli_connect("localhost", "root", "", "prog2_project");
 		
-			switch($_GET["page"])
+			switch($_GET['page'])
 			{
 				case 'weapon': include 'weapon.php'; break;
 				case 'character': include 'character.php'; break;
@@ -216,6 +214,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

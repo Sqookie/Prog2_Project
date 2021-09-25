@@ -44,22 +44,26 @@
         "interdimension_traveler" => "Interdimenzionális utazó",
         "element_envoy" => "Elemi követ",
 
-        /* Sign in/out */
+        /* Sign in/up */
         "signin" => "Bejelentkezés",
-        "registration" => "Regisztráció",
+        "signup" => "Regisztráció",
         "username" => "Felhasználó név",
         "email" => "E-mail",
         "password" => "Jelszó",
         "password_again" => "Jelszó újra",
         "send" => "Küldés",
         "signout" => "Kilépés",
+        "not_signed_up" => "Nincsen fiókja? ",
+        "sign_up_here" => "Regisztráció itt",
+        "signed_up" => "Már van fiókja? ",
+        "sign_in_here" => "Bejelentkezés itt",
 
         /* Home page */
         "home_introduce" =>
         '
         <div class="col-md-12 px-2 bold white">Cég megalapítási ideje：2014 Június 22</div>
-        <div class="col-md-12 px-2 bold white">Androidra fellépési ideje：2016 November 24</div>
-        <div class="col-md-12 px-2 bold white">Applera fellépési ideje：2017 Február 14</div>
+        <div class="col-md-12 px-2 bold white">Ándrojd fellépési ideje：2016 November 24</div>
+        <div class="col-md-12 px-2 bold white">Ápöl fellépési ideje：2017 Február 14</div>
         ',
 
         /* Copyright */

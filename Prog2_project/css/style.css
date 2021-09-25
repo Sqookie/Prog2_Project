@@ -39,7 +39,81 @@ body
 	color: white;
 }
 
-/* Sign in/out menu */
+/* Sign in/up page */
+.signup-box
+{
+	width: 360px;
+	height: 620px;
+	margin: auto;
+	background-color: #212529;
+	border-radius: 3px;
+}
+
+h1
+{
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+	font-weight: bold;
+}
+
+.signin-page
+{
+	justify-content: center !important;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.display_none
+{
+	display: none;
+}
+
+form input
+{
+	width: 100%;
+	margin-top: 25px;
+	padding: 7px;
+	border: none;
+	border: 1px solid gray;
+	border-radius: 6px;
+	outline: none;
+	font-weight: bold;
+}
+
+input[type="submit"]
+{
+	margin-top: 25px;
+	border: none;
+	background-color: #49c1a2;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p 
+{
+	margin-top: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+p a, p a:hover
+{
+	text-decoration: none;
+	color: cyan;
+}
+
+
+.success
+{
+	color: green;
+}
+
+.error
+{
+	color: red;
+}
 
 
 /* Dropdown menu */

@@ -44,15 +44,19 @@
         "interdimension_traveler" => "古代元素使",
         "element_envoy" => "越界者",
         
-        /* Sign in/out */
+        /* Sign in/up */
         "signin" => "登录",
-        "registration" => "注册",
+        "signup" => "注册",
         "username" => "用户名",
         "email" => "邮箱",
         "password" => "密码",
-        "password_again" => "二次密码",
+        "password_again" => "确认密码",
         "send" => "发送",
         "signout" => "退出",
+        "not_signed_up" => "没有注册账号？",
+        "sign_up_here" => "点击注册",
+        "signed_up" => "已经注册了账号？",
+        "sign_in_here" => "点击登录",
 
         /* Home page */
         "home_introduce" =>

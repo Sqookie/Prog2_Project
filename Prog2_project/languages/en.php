@@ -44,15 +44,19 @@
         "interdimension_traveler" => "Interdimension Traveler",
         "element_envoy" => "Element Envoy",
 
-        /* Sign in/out */
+        /* Sign in/up */
         "signin" => "Sign in",
-        "registration" => "Registration",
+        "signup" => "Sign up",
         "username" => "Username",
         "email" => "E-mail",
         "password" => "Password",
-        "password_again" => "Password again",
+        "password_again" => "Confirm password",
         "send" => "Send",
         "signout" => "Sign out",
+        "not_signed_up" => "Don't have an account? ",
+        "sign_up_here" => "Sign up here",
+        "signed_up" => "Already have an account? ",
+        "sign_in_here" => "Sign in here",
 
         /* Home page */
         "home_introduce" =>
