@@ -42,7 +42,7 @@
 		}
 		else
 		{
-			echo '<p class="error">A két megadott jelszó nem egyezik</p>';
+			echo "<script>alert('Két jelszó nem egyezik meg!')</script>";
 		}
 	}
 	
