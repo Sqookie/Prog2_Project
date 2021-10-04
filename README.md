@@ -28,3 +28,6 @@
 
 ### 2021.09.25
 * **Added sign in, sign up function**
+
+### 2021.10.03
+* **Added Javascript alert**
