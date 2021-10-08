@@ -3,7 +3,7 @@
 **Soul Knight was created back in 2017, now it has got more than 300 weapons, almost 20 characters. That's why I'm creating this website to make data searching easier.**
 
 ## This website will contain:
-* **User login fuction with email verification**
+* **User login, sign up function with email notfication**
 * **Search bar to make weapon, character searching easier**
 * **Comment section for the users at the weapon page**
 
