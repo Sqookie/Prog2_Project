@@ -31,3 +31,6 @@
 
 ### 2021.10.03
 * **Added Javascript alert**
+
+### 2021.10.08
+* **Added email notification after registration**
