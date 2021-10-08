@@ -57,6 +57,26 @@
         "sign_up_here" => "Regisztráció itt",
         "signed_up" => "Már van fiókja? ",
         "sign_in_here" => "Bejelentkezés itt",
+        "invalid_email" => "Érvénytelen email!",
+        "successful_registration" => "Sikeres Regisztráció!",
+        "email_already_registered" => "Ezzel az email címmel már regisztráltak!",
+        "password_not_matched" => "Két megadott jelszó nem egyezik!",
+        "wrong_email_or_password" => "Hibás email vagy jelszó!",
+
+        /* Email send */
+        "hi" => "Szia ",
+        "comma" => ",",
+        "log_in_now" =>
+        '   
+            <br><br>
+            Most már betudtsz lépni és megtutdod tekinteni a tartalmakat!
+
+            <br><br>
+            Üdvözlettel,
+            <br>
+            Sqookie
+        ',
+        "subject" => "Köszönöm, hogy regisztráltál!",
 
         /* Home page */
         "home_introduce" =>

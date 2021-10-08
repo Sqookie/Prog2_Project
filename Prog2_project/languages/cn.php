@@ -57,6 +57,26 @@
         "sign_up_here" => "点击注册",
         "signed_up" => "已经注册了账号？",
         "sign_in_here" => "点击登录",
+        "invalid_email" => "无效邮箱！",
+        "successful_registration" => "注册成功！",
+        "email_already_registered" => "邮箱已注册！",
+        "password_not_matched" => "提供的密码不一致！",
+        "wrong_email_or_password" => "错误邮箱或密码！",
+        
+        /* Email send */
+        "hi" => "你好 ",
+        "comma" => "，",
+        "log_in_now" =>
+        '
+            <br><br>
+            您现在可以登录查看数据了！
+
+            <br><br>
+            此致,
+            <br>
+            曲奇君
+        ',
+        "subject" => "感谢您的注册",
 
         /* Home page */
         "home_introduce" =>

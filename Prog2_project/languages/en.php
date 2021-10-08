@@ -57,6 +57,26 @@
         "sign_up_here" => "Sign up here",
         "signed_up" => "Already have an account? ",
         "sign_in_here" => "Sign in here",
+        "invalid_email" => "Invalid email!",
+        "successful_registration" => "Successful Registration!",
+        "email_already_registered" => "This email is already registered!",
+        "password_not_matched" => "Password not matched!",
+        "wrong_email_or_password" => "Wrong email or password!",
+
+        /* Email send */
+        "hi" => "Hi ",
+        "comma" => ",",
+        "log_in_now" =>
+        '
+            <br><br>
+            You can log in to view the contents now, enjoy!
+
+            <br><br>
+            Best regards,
+            <br>
+            Sqookie
+        ',
+        "subject" => "Thank you for your registration!",
 
         /* Home page */
         "home_introduce" =>

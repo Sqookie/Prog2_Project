@@ -9,43 +9,97 @@
 		$email = mysqli_real_escape_string($l, filter_var($_POST["email"],FILTER_SANITIZE_SPECIAL_CHARS));
 		$password1 = mysqli_real_escape_string($l, filter_var($_POST["password1"],FILTER_SANITIZE_SPECIAL_CHARS));
 		$password2 = mysqli_real_escape_string($l, filter_var($_POST["password2"],FILTER_SANITIZE_SPECIAL_CHARS));
-		
-		if($password1 == $password2)
-		{
-			$exists = mysqli_query($l, "SELECT `email` FROM `user` WHERE `email`='".$email."'");
-			
-			$count = mysqli_num_rows($exists);
-			
-			if($count == 0)
-			{
-				$better = $password1 . '-Sqookie233';
-				$evenbetter = hash('sha256', $better);
-				
-				mysqli_query($l, "INSERT INTO `user` SET 
-				`id` = NULL,
-				`name` = '".$name."',
-				`email` = '".$email."',
-				`password` = '".$evenbetter."',
-				`date` = '".date("Y-m-d H:i:s")."',
-				`status` = 'verified'
-				");
-			
-				echo '<p class="success">Sikeres regisztráció!</p>';
 
-				$name = '';
-				$email = '';	
-			}
-			else
-			{
-				echo '<p class="error">Ezzel az email címmel már regisztráltak</p>';
-			}
+		if(filter_var($email, FILTER_VALIDATE_EMAIL) === false)
+		{
+			echo '<script>alert("'. $lang['invalid_email'] .'")</script>'; 
 		}
 		else
 		{
-			echo "<script>alert('Két jelszó nem egyezik meg!')</script>";
+			if($password1 == $password2)
+			{
+				$exists = mysqli_query($l, "SELECT `email` FROM `user` WHERE `email`='".$email."'");
+				
+				$count = mysqli_num_rows($exists);
+				
+				if($count == 0)
+				{
+					$better = $password1 . '-Sqookie233';
+					$evenbetter = hash('sha256', $better);
+					
+					mysqli_query($l, "INSERT INTO `user` SET 
+					`id` = NULL,
+					`name` = '".$name."',
+					`email` = '".$email."',
+					`password` = '".$evenbetter."',
+					`date` = '".date("Y-m-d H:i:s")."',
+					`status` = 'verified'
+					");
+				
+					echo '<script>alert("'. $lang['successful_registration'] .'")</script>';
+
+					$name = '';
+					$email = '';	
+				}
+				else
+				{
+					echo '<script>alert("'. $lang['email_already_registered'] .'")</script>';
+				}
+			}
+			else
+			{	
+				echo '<script>alert("'. $lang['password_not_matched'] .'")</script>';
+			}
 		}
 	}
-	
+
+	/* Email sendgrid function */
+    if(isset($_POST["signupbutton"]))
+	{
+		$email_send = mysqli_real_escape_string($l, filter_var($_POST["email"],FILTER_SANITIZE_SPECIAL_CHARS));
+		$name_send = mysqli_real_escape_string($l, filter_var($_POST["name"],FILTER_SANITIZE_SPECIAL_CHARS));
+		$body = $lang['hi'] . '<strong>' . $name_send . '</strong>' . $lang['comma'] . $lang['log_in_now'];
+		$subject = $lang['subject'];
+
+		$headers = array(
+			'Authorization: Bearer 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',
+			'Content-Type: application/json'
+		);
+
+		$data = array(
+			"personalizations" => array(
+				array(
+					"to" => array(
+						array(
+							"email" => $email_send,
+							"name" => $name_send
+						)
+					)
+				)
+			),
+			"from" => array(
+				"email" => "huangshenqi0622@gmail.com"
+			),
+			"subject" => $subject,
+			"content" => array(
+				array(
+					"type" => "text/html",
+					"value" => $body
+				)
+			)
+		);
+
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, "https://api.sendgrid.com/v3/mail/send");
+		curl_setopt($ch, CURLOPT_POST,1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		$response = curl_exec($ch);
+		curl_close($ch);
+	}
+
 	/* Sign in */
 	if(isset($_POST['signinbutton']))
 	{
@@ -70,7 +124,7 @@
 		}
 		else
 		{
-			echo '<p class="error">Hibás email cím vagy jelszó!</p>';	
+			echo '<script>alert("'. $lang['wrong_email_or_password'] .'")</script>';
 		}	
 	}
 ?>
@@ -89,8 +143,8 @@
 	<div class="col-md-4 display_none" id="signup">
 		<h1><?php echo $lang['signup'] ?></h1>
 		<form method="post">
-			<input tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" class="form-control" value="<?php echo $name; ?>" required>
-			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" class="form-control" value="<?php echo $email; ?>" required>
+			<input tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" class="form-control" required>
+			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" class="form-control" required>
 			<input type="password" name="password1" placeholder="<?php echo $lang['password'] ?>" class="form-control" required>
 			<input type="password" name="password2" placeholder="<?php echo $lang['password_again'] ?>" class="form-control" required>
 			<input type="submit" name="signupbutton" value="<?php echo $lang['signup'] ?>">
@@ -117,5 +171,4 @@ function show_hide()
     }
 }
 </script>
-
 </div>
