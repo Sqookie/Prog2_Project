@@ -7,6 +7,8 @@
 * **Search bar to make weapon, character searching easier**
 * **Comment section for the users at the weapon page**
 
+## Changelog
+
 ### 2021.09.08
 * **Getting started with the project**
 
@@ -34,3 +36,6 @@
 
 ### 2021.10.08
 * **Added email notification after registration**
+
+### 2021.10.09
+* **Changed some code in signin.php**
