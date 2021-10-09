@@ -37,9 +37,6 @@
 					");
 				
 					echo '<script>alert("'. $lang['successful_registration'] .'")</script>';
-
-					$name = '';
-					$email = '';	
 				}
 				else
 				{
@@ -60,44 +57,54 @@
 		$name_send = mysqli_real_escape_string($l, filter_var($_POST["name"],FILTER_SANITIZE_SPECIAL_CHARS));
 		$body = $lang['hi'] . '<strong>' . $name_send . '</strong>' . $lang['comma'] . $lang['log_in_now'];
 		$subject = $lang['subject'];
+		
+		$password = mysqli_real_escape_string($l, filter_var($_POST["password"],FILTER_SANITIZE_SPECIAL_CHARS));
+		$better = $password . "-Sqookie233";
+		$evenbetter = hash('sha256', $better);
 
-		$headers = array(
-			'Authorization: Bearer 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',
-			'Content-Type: application/json'
-		);
+		$exists = mysqli_query($l, "SELECT * FROM `user` WHERE `name`='".$name_send."' AND `email`='".$email_send."' AND `password`='".$evenbetter."' AND `status`='verified'");
+		$count = mysqli_num_rows($exists);
 
-		$data = array(
-			"personalizations" => array(
-				array(
-					"to" => array(
-						array(
-							"email" => $email_send,
-							"name" => $name_send
+		if($count == 1)
+		{
+			$headers = array(
+				'Authorization: Bearer ',
+				'Content-Type: application/json'
+			);
+	
+			$data = array(
+				"personalizations" => array(
+					array(
+						"to" => array(
+							array(
+								"email" => $email_send,
+								"name" => $name_send
+							)
 						)
 					)
+				),
+				"from" => array(
+					"email" => "huangshenqi0622@gmail.com"
+				),
+				"subject" => $subject,
+				"content" => array(
+					array(
+						"type" => "text/html",
+						"value" => $body
+					)
 				)
-			),
-			"from" => array(
-				"email" => "huangshenqi0622@gmail.com"
-			),
-			"subject" => $subject,
-			"content" => array(
-				array(
-					"type" => "text/html",
-					"value" => $body
-				)
-			)
-		);
-
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, "https://api.sendgrid.com/v3/mail/send");
-		curl_setopt($ch, CURLOPT_POST,1);
-		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-		curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		$response = curl_exec($ch);
-		curl_close($ch);
+			);
+	
+			$ch = curl_init();
+			curl_setopt($ch, CURLOPT_URL, "https://api.sendgrid.com/v3/mail/send");
+			curl_setopt($ch, CURLOPT_POST,1);
+			curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+			$response = curl_exec($ch);
+			curl_close($ch);
+		}
 	}
 
 	/* Sign in */
