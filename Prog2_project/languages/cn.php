@@ -24,6 +24,12 @@
         "other" => "其他",
 
         /* Characters */
+        "health" => "生命值",
+        "armor" => "护盾值",
+        "energy" => "蓝量",
+        "crit_chance" => "暴击率",
+        "starter_weapon" => "初始武器",
+        "bonus_buff" => "额外天赋",
         "knight" => "骑士",
         "rogue" => "游侠",
         "wizard" => "法师",
@@ -58,10 +64,12 @@
         "signed_up" => "已经注册了账号？",
         "sign_in_here" => "点击登录",
         "invalid_email" => "无效邮箱！",
+        "wrong_answer" => "错误答案！",
         "successful_registration" => "注册成功！",
         "email_already_registered" => "邮箱已注册！",
         "password_not_matched" => "提供的密码不一致！",
         "wrong_email_or_password" => "错误邮箱或密码！",
+        "user_not_exist" => "用户不存在！",
         
         /* Email send */
         "hi" => "你好 ",
@@ -69,12 +77,21 @@
         "log_in_now" =>
         '
             <br><br>
-            您现在可以登录查看数据了！
+            感谢您的注册！
+            <br>
+            您现在可以: <br>
+            - 查看所有武器的数据 <br>
+            - 查看所有角色的数据 <br>
+            - 在武器下面评论 <br>
+            - 使用搜索栏来寻找你想找到的数据 <br>
+
+            <br>
+            希望这个网站能帮到您！
 
             <br><br>
             此致,
             <br>
-            曲奇君
+            <strong>曲奇君</strong>
         ',
         "subject" => "感谢您的注册",
 

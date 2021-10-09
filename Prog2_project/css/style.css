@@ -59,9 +59,9 @@ h1
 
 .signin-page
 {
-	justify-content: center !important;
+	justify-content: center;
 	text-align: center;
-	margin-top: 100px;
+	padding-top: 50px;
 }
 
 .display_none
@@ -104,6 +104,11 @@ p a, p a:hover
 	color: cyan;
 }
 
+/* Home slider */
+.carousel {
+	width:640px;
+	height:360px;
+  }
 
 /* Dropdown menu */
 .item_active

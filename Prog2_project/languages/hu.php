@@ -24,6 +24,12 @@
         "other" => "Egyebek",
 
         /* Characters */
+        "health" => "Élet",
+        "armor" => "Páncél",
+        "energy" => "Energia",
+        "crit_chance" => "Kritikus Esély",
+        "starter_weapon" => "Kezdő Fegyver",
+        "bonus_buff" => "Bónusz Buff",
         "knight" => "Lovag",
         "rogue" => "Gazember",
         "wizard" => "Varázsló",
@@ -58,10 +64,12 @@
         "signed_up" => "Már van fiókja? ",
         "sign_in_here" => "Bejelentkezés itt",
         "invalid_email" => "Érvénytelen email!",
+        "wrong_answer" => "Rossz megoldást adtál!",
         "successful_registration" => "Sikeres Regisztráció!",
         "email_already_registered" => "Ezzel az email címmel már regisztráltak!",
         "password_not_matched" => "Két megadott jelszó nem egyezik!",
         "wrong_email_or_password" => "Hibás email vagy jelszó!",
+        "user_not_exist" => "Nem létezik ilyen felhasználó!",
 
         /* Email send */
         "hi" => "Szia ",
@@ -69,12 +77,21 @@
         "log_in_now" =>
         '   
             <br><br>
-            Most már betudtsz lépni és megtutdod tekinteni a tartalmakat!
+            Köszönöm, hogy regisztráltál!
+            <br>
+            Mostantol ezeket teheted meg: <br>
+            - Megtekintheted az összes fegyver adatát <br>
+            - Megtekintheted az összes karakter adatát <br>
+            - Megjegyzést írni a fegyvereknél <br>
+            - Kereső használatát, hogy könnyebben megkeresheted amit akarsz <br>
+
+            <br>
+            Remélem sokat tud segíteni ez a weboldal!
 
             <br><br>
             Üdvözlettel,
             <br>
-            Sqookie
+            <strong>Sqookie</strong>
         ',
         "subject" => "Köszönöm, hogy regisztráltál!",
 

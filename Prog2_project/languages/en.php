@@ -24,6 +24,12 @@
         "other" => "Others",
 
         /* Characters */
+        "health" => "Health",
+        "armor" => "Armor",
+        "energy" => "Energy",
+        "crit_chance" => "Critical Chance",
+        "starter_weapon" => "Starter Weapon",
+        "bonus_buff" => "Bonus Buff",
         "knight" => "Knight",
         "rogue" => "Rogue",
         "wizard" => "Wizard",
@@ -58,10 +64,12 @@
         "signed_up" => "Already have an account? ",
         "sign_in_here" => "Sign in here",
         "invalid_email" => "Invalid email!",
+        "wrong_answer" => "Wrong Answer!",
         "successful_registration" => "Successful Registration!",
         "email_already_registered" => "This email is already registered!",
         "password_not_matched" => "Password not matched!",
         "wrong_email_or_password" => "Wrong email or password!",
+        "user_not_exist" => "User does not exist!",
 
         /* Email send */
         "hi" => "Hi ",
@@ -69,12 +77,21 @@
         "log_in_now" =>
         '
             <br><br>
-            You can log in to view the contents now, enjoy!
+            Thank you for your registration!
+            <br>
+            Now you can: <br>
+            - View all the weapon data <br>
+            - View all the character data <br>
+            - Comment at the weapon page <br>
+            - Using search bar to make data searching easier <br>
+
+            <br>
+            I hope this website can help you!
 
             <br><br>
             Best regards,
             <br>
-            Sqookie
+            <strong>Sqookie</strong>
         ',
         "subject" => "Thank you for your registration!",
 
