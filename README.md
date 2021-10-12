@@ -4,7 +4,7 @@
 
 ## This website will contain:
 * **User login, sign up function with email notfication**
-* **Search bar to make weapon, character searching easier**
+* **Search bar to make weapon searching easier**
 * **Comment section for the users at the weapon page**
 
 ## Changelog
@@ -39,3 +39,6 @@
 
 ### 2021.10.09
 * **Changed some code in signin.php**
+
+### 2021.10.12
+* **Added content to character page**
