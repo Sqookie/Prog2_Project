@@ -1,8 +1,6 @@
 <div class="container">
 
 <?php
-
-
     /* Sign up with sendgrid email function*/
     if(isset($_POST["signupbutton"]))
 	{

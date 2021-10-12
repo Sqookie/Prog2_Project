@@ -1,16 +1,30 @@
+html
+{
+	height: 100%;
+}
+
 body
 {
 	background-image: url("../img/chillyroom_background.jpg");
+	scroll-behavior: smooth;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
-.arr{
+.navbar
+{
+	width: 100%;
+}
+
+footer{
 	font-weight: bold;
 	font-size: 20px;
 	text-align: center;
 	background-color: #212529;
-	margin-top: 15px;
-	padding: 20px;
 	color: white;
+	padding: 25px;
+	margin-top: auto;
 }
 
 .bold
@@ -22,11 +36,6 @@ body
 .pad_right
 {
     padding-right: 16px !important;
-}
-
-.pad_right_none
-{
-	padding-right: none !important;
 }
 
 .active
@@ -105,10 +114,61 @@ p a, p a:hover
 }
 
 /* Home slider */
-.carousel {
-	width:640px;
-	height:360px;
-  }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 500px !important;
+  min-width: 500px !important;    /* Set slide height here */
+
+}
+
+/* Characters */
+.CharacterSize
+{
+	width: 55px;
+	height: 50px;
+}
+
+table > thead > tr, table > tbody > tr
+{
+	color:white;
+	border: 5px solid #2e313a;
+	border-collapse: collapse;
+}
+
+.wrap
+{
+	white-space: pre-wrap;
+}
+
+table > thead > tr > th
+{
+	text-align: center;
+	font-size: 16px;
+}
+
+table > tbody > tr > td
+{
+	text-align: center;
+	padding: 10px 30px;
+	font-size: 15px;
+}
+
+.character_title
+{
+	color: white;
+	padding-left: 10px;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.character_text
+{
+	color: white;
+	padding-left: 10px;
+	font-size: 17px;
+	padding: 10px;
+}
 
 /* Dropdown menu */
 .item_active
