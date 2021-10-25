@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (
-        /* Menu */
+        /* MENU */
         "title" => "Soul Knight",
         "home" => "Home",
         "weapon" => "Weapon",
@@ -10,20 +10,37 @@
         "lang_en" => "English",
         "lang_hu" => "Hungarian",
         "lang_cn" => "Chinese",
-        
-        /* Weapon_types */
-        "handgun" => "Handguns",
-        "rifle" => "Rifles",
-        "shotgun" => "Shotguns",
-        "bazooka" => "Bazookas",
-        "laser" => "Lasers",
-        "bow" => "Bows",
-        "melee" => "Melees",
-        "staff" => "Staffs",
-        "throwable" => "Throwables",
-        "other" => "Others",
 
-        /* Characters */
+        /* HOME PAGE */
+        "home_introduce" =>
+        '
+        <div class="col-md-12 px-2 bold white">Company creation date：22nd June 2014</div>
+        <div class="col-md-12 px-2 bold white">Android creation date：24th November 2016</div>
+        <div class="col-md-12 px-2 bold white">Apple creation date：17th February 2017</div>
+        ',
+        
+        /* WEAPON PAGE */
+        "weapon_header" =>
+        '
+            <div class="weapon_title">Overview</div>
+            <div class="weapon_text">
+                In the Cellar, all weapons that have ever been obtained (picked up at least once) are displayed along with their stats and the number of times obtained.
+                This number is increased by obtaining that weapon from the Gashapon Machine, the Chest inside the Living Room,
+                Chests found during a run, Vending Machines, or from the shop via purchase during a run. 
+                For Starter Weapons, once upgraded, their Cellar frames of unupgraded versions will be permanently replaced by their upgraded ones. 
+                There is also an empty frame that represents attacking with an empty hand. Seasonal weapons will not appear in the Cellar.
+            </div>
+        ',
+
+        "search_for_weapon" => "Search For Weapon",
+        "search" => "Search",
+        "weapon_name" => "Weapon Name",
+        "damage" => "Damage",
+        "energy_cost" => "Mana Cost",
+        "crit_chance" => "Crit Chance",
+        "inaccuracy" => "Inaccuracy",
+
+        /* CHARACTER PAGE */
         "character_header" =>
         '
             <div class="character_title">Leveling up a character gives the following bonuses:</div>
@@ -148,7 +165,7 @@
         "element_envoy_price" => "Unlock with Echo Amber",
         "element_envoy_buff" => "Immune to fire, take less explosion damage, and increase fire damage to enemies. Immune to freeze, and apply extra freeze time to enemies.",
 
-        /* Sign in/up */
+        /* SIGN IN/UP PAGE */
         "signin" => "Sign in",
         "signup" => "Sign up",
         "username" => "Username",
@@ -169,7 +186,7 @@
         "wrong_email_or_password" => "Wrong email or password!",
         "user_not_exist" => "User does not exist!",
 
-        /* Email send */
+        /* SEND EMAIL */
         "hi" => "Hi ",
         "comma" => ",",
         "log_in_now" =>
@@ -193,15 +210,7 @@
         ',
         "subject" => "Thank you for your registration!",
 
-        /* Home page */
-        "home_introduce" =>
-        '
-        <div class="col-md-12 px-2 bold white">Company creation date：22nd June 2014</div>
-        <div class="col-md-12 px-2 bold white">Android creation date：24th November 2016</div>
-        <div class="col-md-12 px-2 bold white">Apple creation date：17th February 2017</div>
-        ',
-
-        /* Copyright */
+        /* COPYRIGHT */
         "copyright" => "&copy; " . date("Y") . ". - All rights reserved!",
     );
 ?>

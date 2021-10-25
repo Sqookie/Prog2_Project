@@ -1,7 +1,7 @@
 <div class="container">
 
 <?php
-    /* Sign up with sendgrid email function*/
+    /* SIGN UP WITH SENDGRID EMAIL FUNCTION */
     if(isset($_POST["signupbutton"]))
 	{
 		$name = mysqli_real_escape_string($l, filter_var($_POST["name"],FILTER_SANITIZE_SPECIAL_CHARS));
@@ -44,12 +44,12 @@
 			
 				echo '<script>alert("'. $lang['successful_registration'] .'")</script>';
 				
-				/* Email notification */
+				/* EMAIL NOTIFICATION */
 				$body = $lang['hi'] . '<strong>' . $name . '</strong>' . $lang['comma'] . $lang['log_in_now'];
 				$subject = $lang['subject'];
 
 				$headers = array(
-					'Authorization: Bearer',
+					'Authorization: Bearer API_key',
 					'Content-Type: application/json'
 				);
 		
@@ -65,7 +65,7 @@
 						)
 					),
 					"from" => array(
-						"email" => "huangshenqi0622@gmail.com"
+						"email" => "something@gmail.com"
 					),
 					"subject" => $subject,
 					"content" => array(
@@ -94,7 +94,7 @@
 
 	}
 
-	/* Sign in */
+	/* SIGN IN */
 	if(isset($_POST['signinbutton']))
 	{
 		$email = mysqli_real_escape_string($l, filter_var($_POST["email"],FILTER_SANITIZE_SPECIAL_CHARS));
@@ -105,7 +105,7 @@
 			
 		$exists = mysqli_query($l, "SELECT * FROM `user` WHERE `password`='".$evenbetter."' AND `email`='".$email."' AND `status`='verified'");
 		$count = mysqli_num_rows($exists);
-			
+
 		if($count == 1)
 		{
 			$user = mysqli_fetch_array($exists);
@@ -123,13 +123,14 @@
 	}
 ?>
 
+<!-- SIGN IN/UP FORM -->
 <div class="row signin-page form">
 	<div class="col-md-4" id="signin">
 		<h1><?php echo $lang['signin'] ?></h1>
 		<form method="post">
-			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" class="form-control" required>
-			<input type="password" name="password" placeholder="<?php echo $lang['password'] ?>" class="form-control" required>
-			<input type="submit" name="signinbutton" value="<?php echo $lang['signin'] ?>">
+			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
+			<input type="password" name="password" placeholder="<?php echo $lang['password'] ?>"" required>
+			<input type="submit" name="signinbutton" class="signin_submit" value="<?php echo $lang['signin'] ?>">
 			<p class="message"><?php echo $lang['not_signed_up'] ?><a onclick="show_hide()" href="#"><?php echo $lang['sign_up_here'] ?></a></p>
 		</form>
 	</div>
@@ -137,17 +138,18 @@
 	<div class="col-md-4 display_none" id="signup">
 		<h1><?php echo $lang['signup'] ?></h1>
 		<form method="post">
-			<input tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" class="form-control" required>
-			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" class="form-control" required>
-			<input type="password" name="password1" placeholder="<?php echo $lang['password'] ?>" class="form-control" required>
-			<input type="password" name="password2" placeholder="<?php echo $lang['password_again'] ?>" class="form-control" required>
-			<input type="text" name="verify_question" placeholder="123 + 110" class="form-control" required>
-			<input type="submit" name="signupbutton" value="<?php echo $lang['signup'] ?>">
+			<input tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" required>
+			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
+			<input type="password" name="password1" placeholder="<?php echo $lang['password'] ?>" required>
+			<input type="password" name="password2" placeholder="<?php echo $lang['password_again'] ?>" required>
+			<input type="text" name="verify_question" placeholder="123 + 110" required>
+			<input type="submit" name="signupbutton" class="signin_submit" value="<?php echo $lang['signup'] ?>">
 			<p class="message"><?php echo $lang['signed_up'] ?><a onclick="show_hide()" href="#"><?php echo $lang['sign_in_here'] ?></a></p>
 		</form>
 	</div>
 </div>
 
+<!-- DISPLAY/HIDE FORM FUNCTION -->
 <script>
 var a
 function show_hide()

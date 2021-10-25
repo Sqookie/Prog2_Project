@@ -1,3 +1,4 @@
+/* INDEX */
 html
 {
 	height: 100%;
@@ -15,6 +16,11 @@ body
 .navbar
 {
 	width: 100%;
+}
+
+.container-fluid
+{
+	padding: 0px;
 }
 
 footer{
@@ -48,80 +54,46 @@ footer{
 	color: white;
 }
 
-/* Sign in/up page */
-.signup-box
+/* HOME PAGE */
+.carousel 
 {
-	width: 360px;
-	height: 620px;
-	margin: auto;
-	background-color: #212529;
-	border-radius: 3px;
+  width:300px
 }
 
-h1
+/* WEAPON PAGE */
+.weapon_title
 {
-	text-align: center;
-	padding-top: 15px;
 	color: white;
+	padding-left: 10px;
+	font-size: 25px;
 	font-weight: bold;
+	padding: 10px;
 }
 
-.signin-page
+.weapon_text
 {
-	justify-content: center;
-	text-align: center;
-	padding-top: 50px;
-}
-
-.display_none
-{
-	display: none;
-}
-
-form input
-{
-	width: 100%;
-	margin-top: 25px;
-	padding: 7px;
-	border: none;
-	border: 1px solid gray;
-	border-radius: 6px;
-	outline: none;
-	font-weight: bold;
-}
-
-input[type="submit"]
-{
-	margin-top: 25px;
-	border: none;
-	background-color: #49c1a2;
 	color: white;
-	font-size: 18px;
-	font-weight: bold;
+	padding-left: 10px;
+	font-size: 17px;
+	padding: 10px;
 }
 
-p 
+.search_bar
 {
-	margin-top: 20px;
-	color: white;
-	font-weight: bold;
+	margin-left: 10px;
 }
 
-p a, p a:hover
+.weapon_search
 {
-	text-decoration: none;
-	color: cyan;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    color: white;
+    background-color: #49c1a2;
+    border: none;
+    border-radius: 0.17rem;
 }
 
-/* Home slider */
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  min-height: 500px !important;
-  min-width: 500px !important;    /* Set slide height here */
-
-}
-
-/* Characters */
+/* CHARACTER PAGE */
 .CharacterSize
 {
 	width: 55px;
@@ -170,7 +142,72 @@ table > tbody > tr > td
 	padding: 10px;
 }
 
-/* Dropdown menu */
+/* SIGN IN/UP PAGE */
+.signup-box
+{
+	width: 360px;
+	height: 620px;
+	margin: auto;
+	background-color: #212529;
+	border-radius: 3px;
+}
+
+h1
+{
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+	font-weight: bold;
+}
+
+.signin-page
+{
+	justify-content: center;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.display_none
+{
+	display: none;
+}
+
+form input
+{
+	width: 100%;
+	margin-top: 25px;
+	padding: 7px;
+	border: none;
+	border: 1px solid gray;
+	border-radius: 6px;
+	outline: none;
+	font-weight: bold;
+}
+
+.signin_submit
+{
+	margin-top: 25px;
+	border: none;
+	background-color: #49c1a2;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+p 
+{
+	margin-top: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+p a, p a:hover
+{
+	text-decoration: none;
+	color: cyan;
+}
+
+/* DROPDOWN MENU */
 .item_active
 {
 	background-color: #212529 !important;

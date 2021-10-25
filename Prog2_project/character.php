@@ -1,7 +1,9 @@
+<!-- CHARACTER HEADER -->
 <?php echo $lang['character_header'] ?>
 
+<!-- CHARACTER TABLE -->
 <div style="overflow-y: auto;">
-    <table id="character_table">
+    <table>
         <thead>
             <tr>
                 <th><?php echo $lang['character'] ?></th>

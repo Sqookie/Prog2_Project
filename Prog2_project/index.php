@@ -28,16 +28,16 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php?page=home&lang=<?php echo $curr_lang ?>">
-                <img src="img/logo.jpg" alt="Logo" width="45px"></img>
+                <img src="img/logo.jpg" alt="Logo" width="45px" style="padding-left: 5px"></img>
             </a>    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <?php
-                /* Home page*/
+                /* HOME PAGE */
                 if($_GET['page'] == 'home')
                 {
                     echo
@@ -56,10 +56,10 @@
                         </li>
                     ';
                 }
-                /* Before sign in */
+                /* BEFORE SIGN IN */
                 if($_SESSION['signedin'] != 'yes')
                 {
-                    /* Sign in page */
+                    /* SIGN IN PAGE */
                     if($_GET['page'] == 'signin')
                     {
                         echo
@@ -79,10 +79,10 @@
                         ';
                     }
                 }
-                /* After sign in */
+                /* AFTER SIGN IN */
                 else
                 {   
-                    /* Weapon page */
+                    /* WEAPON PAGE */
                     if($_GET['page'] == 'weapon')
                     {
                         echo
@@ -101,7 +101,7 @@
                             </li>
                         ';
                     }
-                    /* Character page */
+                    /* CHARACTER PAGE */
                     if($_GET['page'] == 'character')
                     {
                         echo
@@ -120,7 +120,7 @@
                             </li>
                         ';
                     }
-                    /* Sign out page */
+                    /* SIGN OUT PAGE */
                     if($_GET['page'] == 'signout')
                     {
                         echo
@@ -140,7 +140,7 @@
                         ';
                     }
                 }
-                /* Language drop down menu */
+                /* LANGUAGE DROPDOWN MENU */
                 echo
                 '
                     <li class="nav-item dropdown">

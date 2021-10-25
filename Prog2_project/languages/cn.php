@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (
-        /* Menu */
+        /* MENU */
         "title" => "元气骑士",
         "home" => "主页",
         "weapon" => "武器",
@@ -10,20 +10,36 @@
         "lang_en" => "英语",
         "lang_hu" => "匈牙利语",
         "lang_cn" => "中文",
-        
-        /* Weapon_types */
-        "handgun" => "手枪类",
-        "rifle" => "步枪类",
-        "shotgun" => "霰弹类",
-        "bazooka" => "火箭类",
-        "laser" => "激光类",
-        "bow" => "弓类",
-        "melee" => "近战类",
-        "staff" => "法杖类",
-        "throwable" => "投郑类",
-        "other" => "其他",
 
-        /* Characters */
+        /* HOME PAGE */
+        "home_introduce" =>
+        '
+        <div class="col-md-12 px-2 bold white">公司创建日期：2014年6月22号</div>
+        <div class="col-md-12 px-2 bold white">安卓登录日期：2016年11月24号</div>
+        <div class="col-md-12 px-2 bold white">苹果登录日期：2017年2月17号</div>
+        ',
+        
+        /* WEAPON PAGE */
+        "weapon_header" =>
+        '
+            <div class="weapon_title">概述</div>
+            <div class="weapon_text">
+                在地窖中，所有曾经获得过（至少获得一次）的武器都会与它们的统计数据和获得次数一起显示。
+                通过从扭蛋机、客厅内的宝箱、跑步过程中发现的箱子、自动售货机或在跑步过程中通过购买从商店获得该武器来增加该数字。
+                对于入门武器，一旦升级，其未升级版本的地窖框架将永久替换为升级版本。 
+                还有一个空框代表手刀。 季节性武器不会出现在地窖中。 
+            </div>
+        ',
+
+        "search_for_weapon" => "搜索武器",
+        "search" => "搜索",
+        "weapon_name" => "武器名称",
+        "damage" => "伤害",
+        "energy_cost" => "蓝量消耗",
+        "crit_chance" => "暴击率",
+        "inaccuracy" => "偏移率",
+
+        /* CHARACTER PAGE */
         "character_header" =>
         '
             <div class="character_title">升级角色会给予以下效果:</div>
@@ -148,7 +164,7 @@
         "element_envoy_price" => "维度指引手册解锁",
         "element_envoy_buff" => "降低爆炸伤害并免疫火焰，对敌人火焰伤害提升，免疫冰冻对敌人的冰冻时间增加[角色限定]。",
         
-        /* Sign in/up */
+        /* SIGN IN/UP PAGE */
         "signin" => "登录",
         "signup" => "注册",
         "username" => "用户名",
@@ -169,7 +185,7 @@
         "wrong_email_or_password" => "错误邮箱或密码！",
         "user_not_exist" => "用户不存在！",
         
-        /* Email send */
+        /* SEND EMAIL */
         "hi" => "你好 ",
         "comma" => "，",
         "log_in_now" =>
@@ -193,15 +209,7 @@
         ',
         "subject" => "感谢您的注册",
 
-        /* Home page */
-        "home_introduce" =>
-        '
-        <div class="col-md-12 px-2 bold white">公司创建日期：2014年6月22号</div>
-        <div class="col-md-12 px-2 bold white">安卓登录日期：2016年11月24号</div>
-        <div class="col-md-12 px-2 bold white">苹果登录日期：2017年2月17号</div>
-        ',
-
-        /* Copyright */
+        /* COPYRIGHT */
         "copyright" => "&copy; " . date("Y") . ". - 曲奇君有限公司 版权所有",
     );
 ?>

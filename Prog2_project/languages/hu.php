@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (
-        /* Menu */
+        /* MENU */
         "title" => "Soul Knight",
         "home" => "Főoldal",
         "weapon" => "Fegyver",
@@ -10,20 +10,37 @@
         "lang_en" => "Angol",
         "lang_hu" => "Magyar",
         "lang_cn" => "Kínai",
-        
-        /* Weapon_types */
-        "handgun" => "Pisztolyok",
-        "rifle" => "Karabályek",
-        "shotgun" => "Vadászpuskák",
-        "bazooka" => "Bazookák",
-        "laser" => "Lézerek",
-        "bow" => "Íjak",
-        "melee" => "Kardok",
-        "staff" => "Botok",
-        "throwable" => "Dobhatók",
-        "other" => "Egyebek",
 
-        /* Characters */
+        /* HOME PAGE */
+        "home_introduce" =>
+        '
+        <div class="col-md-12 px-2 bold white">Cég megalapítási ideje：2014 Június 22</div>
+        <div class="col-md-12 px-2 bold white">Ándrojd fellépési ideje：2016 November 24</div>
+        <div class="col-md-12 px-2 bold white">Ápöl fellépési ideje：2017 Február 14</div>
+        ',
+        
+        /* WEAPON PAGE */
+        "weapon_header" =>
+        '
+            <div class="weapon_title">Áttekintés</div>
+            <div class="weapon_text">
+                A Pincében az összes megszerzett (legalább egyszer felvett) fegyver megjelenik a statisztikával és a
+                megszerzett fegyverek számával együtt. Ezt a számot növeli, ha a fegyvert a Gashapon gépből,
+                a nappaliban található ládából, a futás során talált ládákból, az automatákból vagy a boltból futás közben vásárolja meg.
+                A Starter Weapons esetében a frissítést követően a nem frissített verziójú Pince-kereteket véglegesen lecserélik frissítettekre.
+                Van egy üres keret is, amely üres kézzel történő támadást jelent. A szezonális fegyverek nem jelennek meg a Pincében.             
+            </div>
+        ',
+
+        "search_for_weapon" => "Keresés a fegyverre",
+        "search" => "Keresés",
+        "weapon_name" => "Fegyver Neve",
+        "damage" => "Sebzés",
+        "energy_cost" => "Energia Használat",
+        "crit_chance" => "Kritikus Esély",
+        "inaccuracy" => "Pontatlanság",
+
+        /* CHARACTER PAGE */
         "character_header" =>
         '
             <div class="character_title">A karakter fejlesztése a következő bónuszokat biztosítja:</div>
@@ -148,7 +165,7 @@
         "element_envoy_price" => "Echo Amber-el aktiválni",
         "element_envoy_buff" => "Immun a tűzre, kevesebb robbanást okoz, és növeli az ellenség tűzkárát. Immun a lefagyáshoz és extra fagyási időt tesz az ellenségeknek.",
 
-        /* Sign in/up */
+        /* SIGN IN/UP PAGE */
         "signin" => "Bejelentkezés",
         "signup" => "Regisztráció",
         "username" => "Felhasználó név",
@@ -169,7 +186,7 @@
         "wrong_email_or_password" => "Hibás email vagy jelszó!",
         "user_not_exist" => "Nem létezik ilyen felhasználó!",
 
-        /* Email send */
+        /* SEND EMAIL */
         "hi" => "Szia ",
         "comma" => ",",
         "log_in_now" =>
@@ -193,15 +210,7 @@
         ',
         "subject" => "Köszönöm, hogy regisztráltál!",
 
-        /* Home page */
-        "home_introduce" =>
-        '
-        <div class="col-md-12 px-2 bold white">Cég megalapítási ideje：2014 Június 22</div>
-        <div class="col-md-12 px-2 bold white">Ándrojd fellépési ideje：2016 November 24</div>
-        <div class="col-md-12 px-2 bold white">Ápöl fellépési ideje：2017 Február 14</div>
-        ',
-
-        /* Copyright */
+        /* COPYRIGHT */
         "copyright" => "&copy; " . date("Y") . ". - Minden jog fenntartva!",
     );
 ?>
