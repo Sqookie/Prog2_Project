@@ -42,3 +42,6 @@
 
 ### 2021.10.12
 * **Added content to character page**
+
+### 2021.10.25
+* **Added content to weapon page with search bar**
