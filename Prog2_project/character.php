@@ -21,7 +21,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Knight_icon.png" class="CharacterSize" alt="Knight"><br>
-                    <a><?php echo $lang['knight'] ?></a>
+                    <a><strong><?php echo $lang['knight'] ?></strong></a>
                 </td>
                 <td>6(7)</td>
                 <td>5(6)</td>
@@ -35,7 +35,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Rogue_icon.png" class="CharacterSize" alt="Rogue"><br>
-                    <a><?php echo $lang['rogue'] ?></a>
+                    <a><strong><?php echo $lang['rogue'] ?></strong></a>
                 </td>
                 <td>5(6)</td>
                 <td>3(4)</td>
@@ -49,7 +49,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Wizard_icon.png" class="CharacterSize" alt="Wizard"><br>
-                    <a><?php echo $lang['wizard'] ?></a>
+                    <a><strong><?php echo $lang['wizard'] ?></strong></a>
                 </td>
                 <td>3(4)</td>
                 <td>5(6)</td>
@@ -63,7 +63,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Assassin_icon.png" class="CharacterSize" alt="Assasin"><br>
-                    <a><?php echo $lang['assassin'] ?></a>
+                    <a><strong><?php echo $lang['assassin'] ?></strong></a>
                 </td>
                 <td>4(5)</td>
                 <td>4(5)</td>
@@ -77,7 +77,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Alchemist_icon.png" class="CharacterSize" alt="Alchemist"><br>
-                    <a><?php echo $lang['alchemist'] ?></a>
+                    <a><strong><?php echo $lang['alchemist'] ?></strong></a>
                 </td>
                 <td>5(6)</td>
                 <td>5(6)</td>
@@ -91,7 +91,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Engineer_icon.png" class="CharacterSize" alt="Engineer"><br>
-                    <a><?php echo $lang['engineer'] ?></a>
+                    <a><strong><?php echo $lang['engineer'] ?></strong></a>
                 </td>
                 <td>5(6)</td>
                 <td>5(6)</td>
@@ -105,7 +105,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Vampire_icon.png" class="CharacterSize" alt="Vampire"><br>
-                    <a><?php echo $lang['vampire'] ?></a>
+                    <a><strong><?php echo $lang['vampire'] ?></strong></a>
                 </td>
                 <td>3(4)</td>
                 <td>4(5)</td>
@@ -119,7 +119,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Paladin_icon.png" class="CharacterSize" alt="Paladin"><br>
-                    <a><?php echo $lang['paladin'] ?></a>
+                    <a><strong><?php echo $lang['paladin'] ?></strong></a>
                 </td>
                 <td>1(2)</td>
                 <td>8(9)</td>
@@ -133,7 +133,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Elf_icon.png" class="CharacterSize" alt="Elf"><br>
-                    <a><?php echo $lang['elf'] ?></a>
+                    <a><strong><?php echo $lang['elf'] ?></strong></a>
                 </td>
                 <td>5(6)</td>
                 <td>4(5)</td>
@@ -147,7 +147,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Werewolf_icon.png" class="CharacterSize" alt="Werewolf"><br>
-                    <a><?php echo $lang['werewolf'] ?></a>
+                    <a><strong><?php echo $lang['werewolf'] ?></strong></a>
                 </td>
                 <td>11(12)</td>
                 <td>1(2)</td>
@@ -161,7 +161,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Priest_icon.png" class="CharacterSize" alt="Priest"><br>
-                    <a><?php echo $lang['priest'] ?></a>
+                    <a><strong><?php echo $lang['priest'] ?></strong></a>
                 </td>
                 <td>3(4)</td>
                 <td>5(6)</td>
@@ -175,7 +175,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Druid_icon.png" class="CharacterSize" alt="Druid"><br>
-                    <a><?php echo $lang['druid'] ?></a>
+                    <a><strong><?php echo $lang['druid'] ?></strong></a>
                 </td>
                 <td>6(7)</td>
                 <td>3(4)</td>
@@ -189,7 +189,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Robot_icon.png" class="CharacterSize" alt="Robot"><br>
-                    <a><?php echo $lang['robot'] ?></a>
+                    <a><strong><?php echo $lang['robot'] ?></strong></a>
                 </td>
                 <td>3(4)</td>
                 <td>6(7)</td>
@@ -203,7 +203,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Berserker_icon.png" class="CharacterSize" alt="Berserker"><br>
-                    <a><?php echo $lang['berserker'] ?></a>
+                    <a><strong><?php echo $lang['berserker'] ?></strong></a>
                 </td>
                 <td>9(10)</td>
                 <td>3(4)</td>
@@ -217,7 +217,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Necromancer_icon.png" class="CharacterSize" alt="Necromancer"><br>
-                    <a><?php echo $lang['necromancer'] ?></a>
+                    <a><strong><?php echo $lang['necromancer'] ?></strong></a>
                 </td>
                 <td>3(4)</td>
                 <td>5(6)</td>
@@ -231,7 +231,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Officer_icon.png" class="CharacterSize" alt="Officer"><br>
-                    <a><?php echo $lang['officer'] ?></a>
+                    <a><strong><?php echo $lang['officer'] ?></strong></a>
                 </td>
                 <td>5(6)</td>
                 <td>5(6)</td>
@@ -245,7 +245,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Taoist_icon.png" class="CharacterSize" alt="Taoist"><br>
-                    <a><?php echo $lang['taoist'] ?></a>
+                    <a><strong><?php echo $lang['taoist'] ?></strong></a>
                 </td>
                 <td>4(5)</td>
                 <td>4(5)</td>
@@ -259,7 +259,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Inter-dimension_Traveler_icon.png" class="CharacterSize" alt="Inter-dimension Traveler"><br>
-                    <a><?php echo $lang['interdimension_traveler'] ?></a>
+                    <a><strong><?php echo $lang['interdimension_traveler'] ?></strong></a>
                 </td>
                 <td>2</td>
                 <td>3</td>
@@ -273,7 +273,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Element_Envoy_icon.png" class="CharacterSize" alt="Element Envoy"><br>
-                    <a><?php echo $lang['element_envoy'] ?></a>
+                    <a><strong><?php echo $lang['element_envoy'] ?></strong></a>
                 </td>
                 <td>4</td>
                 <td>4</td>

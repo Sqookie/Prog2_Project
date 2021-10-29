@@ -30,7 +30,7 @@
             <a class="navbar-brand" href="index.php?page=home&lang=<?php echo $curr_lang ?>">
                 <img src="img/logo.jpg" alt="Logo" width="45px" style="padding-left: 5px"></img>
             </a>    
-            <button class="navbar-toggler" type="button">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">

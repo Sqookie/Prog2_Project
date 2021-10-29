@@ -12,11 +12,49 @@
         "lang_cn" => "Chinese",
 
         /* HOME PAGE */
-        "home_introduce" =>
+        "home_page"=>
         '
-        <div class="col-md-12 px-2 bold white">Company creation date：22nd June 2014</div>
-        <div class="col-md-12 px-2 bold white">Android creation date：24th November 2016</div>
-        <div class="col-md-12 px-2 bold white">Apple creation date：17th February 2017</div>
+            <h1>Patch notes</h1>
+            <span class="version_title">Version 3.3.0 (23rd September 2021)</span>
+            <ul class="home_ul">
+                <li>Added a limited-time challenge, Rush to Purity, to Boss Rush mode.</li>
+                <li>Added a fishing mini-game.</li>
+                <li>Added 6 skins to the new skin collection, Steam Era.</li>
+                <li>Added 2 multiplayer room skins.</li>
+                <li>Added 2 armor mounts and 3 mounts.</li>
+                <li>Remade character selection panel.</li>
+                <li>Optimized the unlock process of furniture, game modes and some functions.</li>
+                <li>Completed retexturing all skins of Knight, Wizard & Paladin.</li>
+                <li>Added VFX to some skills.</li>
+                <li>Added a prompt for weapon merging.</li>
+                <li>Fixed bugs.</li>
+            </ul>
+            <span class="version_title">Version 3.2.0 (11st July 2021)</span>
+            <ul class="home_ul">
+                <li>Added Legendary Heroes Inter-dimension Traveler and Element Envoy that need to be summoned with special artifacts.</li>
+                <li>New season Sacred Weapons of Old Continent is now open!</li>
+                <li>Added a biome Neo Isle (and a tape for it).</li>
+                <li>Added a collection of new skins, Stars & Seven Seas.</li>
+                <li>Added 3 multiplayer room skins.</li>
+                <li>Added 6 buffs and 4 challenge conditions.</li>
+                <li>Added 4 weapons and a Claw Fun room.</li>
+                <li>Added new achievements.</li>
+                <li>Added new monsters to some old biomes.</li>
+                <li>Added VFX to the third skills of Vigiles skins.</li>
+                <li>Retextured all skins of Elf, Werewolf and Rogue.</li>
+            </ul>
+            <span class="version_title">Version 3.0.0 (27th January 2021)</span>
+            <ul class="home_ul">
+                <li>Happy Spring Festival! The lobby has been re-decorated.
+                <li>Added new biomes Swamp and Grave. You will be given a positive or negative challenge condition after you complete it.</li>
+                <li>Added Season Mode. Game mode of this season is Little Commander. Achieve specific goals to win seasonal rewards.</li>
+                <li>Added 3rd skills to 5 characters.</li>
+                <li>Added Chinese Opera themed skins!</li>
+                <li>Retextured some old skins and increase frames per loop from 4 to 8.</li>
+                <li>Optimized UI display.</li>
+                <li>Added online multiplayer (in beta).</li>
+                <li>Fixed a series of bugs.</li>
+            </ul>
         ',
         
         /* WEAPON PAGE */

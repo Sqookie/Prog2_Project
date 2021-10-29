@@ -16,8 +16,8 @@
 <br>
 
 <!-- WEAPON TABLE -->
-</div>
-    <table>
+<div style="overflow-y: auto;">
+    <table width="100%">
         <thead>
             <tr>
                 <th><?php echo $lang['weapon_name'] ?></th>

@@ -12,11 +12,49 @@
         "lang_cn" => "Kínai",
 
         /* HOME PAGE */
-        "home_introduce" =>
+        "home_page"=>
         '
-        <div class="col-md-12 px-2 bold white">Cég megalapítási ideje：2014 Június 22</div>
-        <div class="col-md-12 px-2 bold white">Ándrojd fellépési ideje：2016 November 24</div>
-        <div class="col-md-12 px-2 bold white">Ápöl fellépési ideje：2017 Február 14</div>
+            <h1>Patch notes</h1>
+            <span class="version_title">Verzió 3.3.0 (2021 Szeptember 23)</span>
+            <ul class="home_ul">
+                <li>Korlátozott idejű kihívás, a Rush to Purity hozzáadva a Boss Rush módhoz.</li>
+                <li>Hozzáadtunk egy horgász minijátékot.</li>
+                <li>6 skin hozzáadva az új skin-kollekcióhoz, a Steam Era-hoz.</li>
+                <li>2 többjátékos szoba skin hozzáadva.</li>
+                <li>2 páncéltartó és 3 tartóelem hozzáadva.</li>
+                <li>A karakterválasztó panel újraalkotása.</li>
+                <li>Optimalizálta a bútorok, játékmódok és egyes funkciók feloldási folyamatát.</li>
+                <li>A Lovag, Varázsló és Nádorok összes skinjének újratextúrálása befejeződött.</li>
+                <li>VFX hozzáadva néhány készséghez.</li>
+                <li>Fegyveregyesítési felszólítás hozzáadva.</li>
+                <li>Hibák javítása.</li> 
+            </ul>
+            <span class="version_title">Verzió 3.2.0 (2021 Július 11)</span>
+            <ul class="home_ul">
+                <li>Interdimenzionális utazó és az Elemi követ bekerült a játékba, akiket különleges tárgyakkal kell megidézni.</li>
+                <li>Már megnyílt a Sacred Weapons of Old Continent új szezonja!</li>
+                <li>Hozzáadtunk egy életrajzot Neo Isle (és egy szalagot hozzá).</li>
+                <li>Új skinek gyűjteménye, a Stars & Seven Seas.</li>
+                <li>3 többjátékos szoba skin hozzáadva.</li>
+                <li>6 buff és 4 kihívási feltétel hozzáadva.</li>
+                <li>4 fegyvert és egy Claw Fun szoba hozzáadva.</li>
+                <li>Új jutalmak hozzáadva.</li>
+                <li>Új szörnyetegek hozzáadva néhány régi életrajzhoz.</li>
+                <li>VFX hozzáadása a Vigiles skinek harmadik képességeihez.</li>
+                <li>Újratexturálta a Manó, Vérfarkas és Gazember összes skinjét.</li> 
+            </ul>
+            <span class="version_title">Verzió 3.0.0 (2021 Január 27)</span>
+            <ul class="home_ul">
+                <li>Boldog Tavaszi Fesztivált! Az előcsarnokot újradíszítettük.
+                <li>Új életrajzok hozzáadva a Swamp és Grave-hez. A teljesítése után pozitív vagy negatív kihívást kap.</li>
+                <li>Szezon mód hozzáadva. Az idei szezon játékmódja a Little Commander. Érjen el konkrét célokat, hogy szezonális jutalmakat nyerjen.</li>
+                <li>3. képesség hozzáadva 5 karakterhez.</li>
+                <li>Kínai opera témájú skinek hozzáadva!</li>
+                <li>Néhány régi felületet újratextúrált, és a ciklusonkénti keretek számát 4-ről 8-ra növelte.</li>
+                <li>Optimalizált felhasználói felület.</li>
+                <li>Hozzáadva az online többjátékos mód (béta verzióban van).</li>
+                <li>Számos hiba javítása.</li> 
+            </ul>
         ',
         
         /* WEAPON PAGE */
