@@ -45,3 +45,6 @@
 
 ### 2021.10.25
 * **Added content to weapon page with search bar**
+
+### 2021.10.29
+* **Added content to home page**
