@@ -48,3 +48,6 @@
 
 ### 2021.10.29
 * **Added content to home page**
+
+### 2021.10.31
+* **Happy Halloween! Added comment section to weapon page**
