@@ -70,6 +70,27 @@
             </div>
         ',
 
+        "comment_header" =>
+        '
+            <div class="weapon_title">Comment section</div>
+            <div class="weapon_text">
+                You will find every single weapon\'s comment here, feel free to share your opinion and be nice with each other!
+            </div>
+            <div class="weapon_text">
+                If you want to search for a weapon, please press the button below.  
+            </div>
+        ',
+        
+        "comment_weapon" => "Comment on a weapon",
+        "no_weapon_found" => "No weapon found",
+        "search_weapon" => "Search for a weapon",
+        "select_weapon" => "----- Select weapon -----",
+        "comment" => "Comment",
+        "enter_your_comment" => "Enter your comment",
+        "all_comments" => "All comments",
+        "comment_successful" => "Comment successfully added!",
+        "choose_one_below" => "Please choose one below",
+ 
         "search_for_weapon" => "Search For Weapon",
         "search" => "Search",
         "weapon_name" => "Weapon Name",

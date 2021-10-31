@@ -1,6 +1,6 @@
 <?php
     $lang = array
-    (
+    (   
         /* MENU */
         "title" => "元气骑士",
         "home" => "主页",
@@ -68,6 +68,27 @@
                 还有一个空框代表手刀。 季节性武器不会出现在地窖中。 
             </div>
         ',
+
+        "comment_header" =>
+        '
+            <div class="weapon_title">评论区</div>
+            <div class="weapon_text">
+                每一个武器的评论你在这里都能找到，尽情分享你的注意吧~ 注意评论礼仪喔！
+            </div>
+            <div class="weapon_text">
+                如果你想查找武器，请按下方的按钮。  
+            </div>
+        ',
+
+        "comment_weapon" => "评论武器",
+        "no_weapon_found" => "没找到相关武器",
+        "search_weapon" => "查找武器",
+        "select_weapon" => "----- 选择武器 -----",
+        "comment" => "评论",
+        "enter_your_comment" => "输入你的评论",
+        "all_comments" => "所有评论",
+        "comment_successful" => "评论成功！",
+        "choose_one_below" => "请在下方选择一个",
 
         "search_for_weapon" => "搜索武器",
         "search" => "搜索",

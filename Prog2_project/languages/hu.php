@@ -70,6 +70,27 @@
             </div>
         ',
 
+        "comment_header" =>
+        '
+            <div class="weapon_title">Megjegyzések</div>
+            <div class="weapon_text">
+                Minden fegyvernek a megjegyzését megtalálod itt, oszd meg a véleményeidet nyugodtan és legyetek kultúráltak!
+            </div>
+            <div class="weapon_text">
+                Ha szeretnél fegyvert keresni akkor nyomd meg az alatta lévő gombot.
+            </div>
+        ',
+
+        "comment_weapon" => "Megjegyzés a fegyverre",
+        "no_weapon_found" => "Nincsen találat",
+        "search_weapon" => "Keresés a fegyverre",
+        "select_weapon" => "----- Fegyver választás -----",
+        "comment" => "Megjegyzés",
+        "enter_your_comment" => "Írd le a megjegyzésedet",
+        "all_comments" => "Összes megjegyzések",
+        "comment_successful" => "Sikeres megjegyzés hozzáadás!",
+        "choose_one_below" => "Kérlek válassz alulról egyet",
+
         "search_for_weapon" => "Keresés a fegyverre",
         "search" => "Keresés",
         "weapon_name" => "Fegyver Neve",

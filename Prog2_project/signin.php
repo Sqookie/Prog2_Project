@@ -128,9 +128,9 @@
 	<div class="col-md-4" id="signin">
 		<h1><?php echo $lang['signin'] ?></h1>
 		<form method="post">
-			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
-			<input type="password" name="password" placeholder="<?php echo $lang['password'] ?>"" required>
-			<input type="submit" name="signinbutton" class="signin_submit" value="<?php echo $lang['signin'] ?>">
+			<input class="sign_form_input" type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
+			<input class="sign_form_input" type="password" name="password" placeholder="<?php echo $lang['password'] ?>" required>
+			<input class="signin_submit" type="submit" name="signinbutton" value="<?php echo $lang['signin'] ?>">
 			<p class="message"><?php echo $lang['not_signed_up'] ?><a onclick="show_hide()" href="#"><?php echo $lang['sign_up_here'] ?></a></p>
 		</form>
 	</div>
@@ -138,12 +138,12 @@
 	<div class="col-md-4 display_none" id="signup">
 		<h1><?php echo $lang['signup'] ?></h1>
 		<form method="post">
-			<input tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" required>
-			<input type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
-			<input type="password" name="password1" placeholder="<?php echo $lang['password'] ?>" required>
-			<input type="password" name="password2" placeholder="<?php echo $lang['password_again'] ?>" required>
-			<input type="text" name="verify_question" placeholder="123 + 110" required>
-			<input type="submit" name="signupbutton" class="signin_submit" value="<?php echo $lang['signup'] ?>">
+			<input class="sign_form_input" tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" required>
+			<input class="sign_form_input" type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
+			<input class="sign_form_input" type="password" name="password1" placeholder="<?php echo $lang['password'] ?>" required>
+			<input class="sign_form_input" type="password" name="password2" placeholder="<?php echo $lang['password_again'] ?>" required>
+			<input class="sign_form_input" type="text" name="verify_question" placeholder="123 + 110" required>
+			<input class="signin_submit" type="submit" name="signupbutton" value="<?php echo $lang['signup'] ?>">
 			<p class="message"><?php echo $lang['signed_up'] ?><a onclick="show_hide()" href="#"><?php echo $lang['sign_in_here'] ?></a></p>
 		</form>
 	</div>
