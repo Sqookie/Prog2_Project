@@ -160,7 +160,7 @@ if(isset($_POST['comment_change_button']) || isset($_POST['comment_button']))
                 <textarea name="comment" placeholder="'. $lang['enter_your_comment'] .'" minlength="10" maxlength="50" required></textarea>
             </div>
             <div class="input-group">
-                <input type="submit" class="comment_input_form" name="comment_button" value="'. $lang['comment'] .'">
+                <input type="submit" class="comment_input_form" name="comment_button" onsubmit="return false;" value="'. $lang['comment'] .'">
             </div>
         </form>
     ';
@@ -180,42 +180,42 @@ if(isset($_POST['comment_change_button']) || isset($_POST['comment_button']))
         ");
 
         echo '<script>alert("'. $lang['comment_successful'] .'")</script>';
+    }
 
-        $query = "SELECT * FROM comment";
+    $query = "SELECT * FROM comment";
 
-        $exists = mysqli_query($l, $query);
-        $count = mysqli_num_rows($exists);
+    $exists = mysqli_query($l, $query);
+    $count = mysqli_num_rows($exists);
 
-        if($count > 0)
-        {
-            echo
-            '
-                <div class="prev-comments"> 
-                <h1>'. $lang['all_comments'] .'</h1>
-            ';  
-                $query = "SELECT * FROM comment";
-                $result = mysqli_query($l, $query);
-                if (mysqli_num_rows($result) > 0) 
+    if($count >= 0)
+    {
+        echo
+        '
+            <div class="prev-comments"> 
+            <h1>'. $lang['all_comments'] .'</h1>
+        ';  
+            $query = "SELECT * FROM comment";
+            $result = mysqli_query($l, $query);
+            if (mysqli_num_rows($result) > 0) 
+            {
+                while ($row = mysqli_fetch_assoc($result)) 
                 {
-                    while ($row = mysqli_fetch_assoc($result)) 
-                    {
-            echo
-            '
-                        <div class="single-item">
-                            <h4>'. $row['name'] .' ('. strtoupper($row['lang']) .')</h4>
-                            <h3>'. $row['weapon'] .'</h3>
-                            <p>'. $row['comment'] .'</p>
-                            <p class="row_date">'. $row['date'] .'</p>
-                        </div>
-            ';
-                    }
+        echo
+        '
+                    <div class="single-item">
+                        <h4>'. $row['name'] .' ('. strtoupper($row['lang']) .')</h4>
+                        <h3>'. $row['weapon'] .'</h3>
+                        <p>'. $row['comment'] .'</p>
+                        <p class="row_date">'. $row['date'] .'</p>
+                    </div>
+        ';
                 }
-            echo
-            '
-                </div>
+            }
+        echo
+        '
             </div>
-            ';
-        }
+        </div>
+        ';
     }
 }
 else if(!isset($_POST['weapon_button']) && !isset($_POST['comment_change_button']) && !isset($_POST['weapon_search']) && !isset($_POST['comment_button']))
@@ -240,3 +240,9 @@ else if(!isset($_POST['weapon_button']) && !isset($_POST['comment_change_button'
     ';
 }
 ?>
+<script>
+if(window.history.replaceState) 
+{
+    window.history.replaceState(null, null, window.location.href);
+}
+</script>
