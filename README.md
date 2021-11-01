@@ -51,3 +51,8 @@
 
 ### 2021.10.31
 * **Happy Halloween! Added comment section to weapon page**
+
+### 2021.11.01
+* **Changed font family**
+* **Fixed form resubmission issue**
+* **Changed some code in style.css**
