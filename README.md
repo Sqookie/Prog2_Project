@@ -56,3 +56,6 @@
 * **Changed font family**
 * **Fixed form resubmission issue**
 * **Changed some code in style.css**
+
+### 2021.11.05
+* **Added transition on the buttons, input fields, table elements**
