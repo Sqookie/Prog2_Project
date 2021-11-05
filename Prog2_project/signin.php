@@ -91,7 +91,6 @@
 				echo '<script>alert("'. $lang['email_already_registered'] .'")</script>';
 			}
 		}
-
 	}
 
 	/* SIGN IN */
@@ -128,7 +127,7 @@
 	<div class="col-md-4" id="signin">
 		<h1><?php echo $lang['signin'] ?></h1>
 		<form method="post">
-			<input class="sign_form_input" type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
+			<input class="sign_form_input" type="email" name="email" autofocus placeholder="<?php echo $lang['email'] ?>" required>
 			<input class="sign_form_input" type="password" name="password" placeholder="<?php echo $lang['password'] ?>" required>
 			<input class="signin_submit" type="submit" name="signinbutton" value="<?php echo $lang['signin'] ?>">
 			<p><?php echo $lang['not_signed_up'] ?><a onclick="show_hide()" href="#"><?php echo $lang['sign_up_here'] ?></a></p>

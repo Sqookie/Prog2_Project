@@ -91,7 +91,7 @@
         "comment_successful" => "Comment successfully added!",
         "choose_one_below" => "Please choose one below",
  
-        "search_for_weapon" => "Search For Weapon",
+        "search_for_weapon" => "Search For a Weapon",
         "search" => "Search",
         "weapon_name" => "Weapon Name",
         "damage" => "Damage",

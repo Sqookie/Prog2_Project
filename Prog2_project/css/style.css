@@ -97,6 +97,14 @@ footer{
 	margin-left: 8px;
 	font-weight: bold;
 	border: 1px solid #49c1a2;
+	outline: none;
+	transition: 0.5s;
+}
+
+.search_bar:focus
+{
+	border-color: #148b6d;
+	box-shadow: 0 0 5px 3px #148b6d;
 }
 
 .weapon_search
@@ -112,12 +120,13 @@ footer{
 	border-top-left-radius: 0%;
 	border-bottom-left-radius: 0%;
 	font-weight: bold;
+	transition: 0.5s;
 }
 
 .weapon_search:hover
 {	
 	background-color: #148b6d;
-	border: 1px solid #148b6d;
+	border-color: #148b6d;
 }
 
 .weapon_input_form
@@ -133,18 +142,19 @@ footer{
     border: 1px solid #49c1a2;
     border-radius: 0.25rem;
 	font-weight: bold;
+	transition: 0.5s;
 }
 
 .weapon_input_form:hover
 {
 	background-color: #148b6d;
-    border: 1px solid #148b6d;
+    border-color: #148b6d;
 }
 
 .wrapper 
 {
     width: 45%;
-    margin: 0 auto;
+    margin: 15px auto;
 	color: white;
 }
 
@@ -189,12 +199,13 @@ footer{
     border: 1px solid #49c1a2;
     border-radius: 0.25rem;
 	font-weight: bold;
+	transition: 0.5s;
 }
 
 .comment_input_form:hover
 {
 	background-color: #148b6d;
-    border: 1px solid #148b6d;
+    border-color: #148b6d;
 }
 
 .row select
@@ -267,12 +278,12 @@ footer{
     border: 1px solid #49c1a2;
     border-radius: 0.25rem;
 	font-weight: bold;
+	transition: 0.5s;
 }
 
 .not_set_weapon_button:hover
 {
 	background-color: #148b6d;
-	border: 1px solid #148b6d;
 }
 
 .weapon_table
@@ -310,6 +321,7 @@ table > thead > tr > th
 {
 	text-align: center;
 	font-size: 16px;
+	transition: 0.5s;
 }
 
 table > tbody > tr > td
@@ -317,6 +329,7 @@ table > tbody > tr > td
 	text-align: center;
 	padding: 10px 30px;
 	font-size: 15px;
+	transition: 0.5s;
 }
 
 table > tbody > tr > td:hover, table > thead > tr > th:hover
@@ -381,6 +394,13 @@ h1
 	border-radius: 6px;
 	outline: none;
 	font-weight: bold;
+	transition: 0.5s;
+}
+
+.sign_form_input:focus
+{
+	border-color: #148b6d;
+	box-shadow: 0 0 5px 3px #148b6d;
 }
 
 .signin_submit
@@ -395,6 +415,7 @@ h1
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
+	transition: 0.5s;
 }
 
 .signin_submit:hover
@@ -413,11 +434,12 @@ p a
 {
 	text-decoration: none;
 	color: cyan;
+	transition: 0.5s;
 }
 
 p a:hover
 {
-	color: rgb(90, 221, 221);
+	color: rgb(73, 158, 158);
 }
 
 /* DROPDOWN MENU */
