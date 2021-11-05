@@ -58,4 +58,4 @@
 * **Changed some code in style.css**
 
 ### 2021.11.05
-* **Added transition on the buttons, input fields, table elements**
+* **Added transition to the buttons, input fields, table elements**
