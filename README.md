@@ -59,3 +59,6 @@
 
 ### 2021.11.05
 * **Added transition to the buttons, input fields, table elements**
+
+### 2021.11.06
+* **Added more transitions, and 2 more easter eggs**
