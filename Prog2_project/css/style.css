@@ -14,6 +14,32 @@ body
 	font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+body::-webkit-scrollbar 
+{
+	width: 1em;
+}
+
+body::-webkit-scrollbar-track 
+{
+	background: #212529;
+}
+   
+body::-webkit-scrollbar-thumb 
+{
+	background-color: #148b6d;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover
+{
+	color: white;
+}
+
 .navbar
 {
 	width: 100%;
@@ -24,7 +50,8 @@ body
 	padding: 0px;
 }
 
-footer{
+footer
+{
 	font-weight: bold;
 	font-size: 20px;
 	text-align: center;
@@ -168,6 +195,12 @@ footer{
 	font-weight: bold;
 	color: black;
 	resize: none;
+	transition: 0.5s;
+}
+
+.wrapper .form .input-group textarea:focus
+{
+	border-color: #148b6d;
 }
 
 .wrapper .form .input-group 
@@ -219,6 +252,12 @@ footer{
 	color: black;
 	resize: none;
 	text-align: center;
+	transition: 0.5s;
+}
+
+.row select:focus
+{
+	border-color: #148b6d;
 }
 
 .wrapper .prev-comments .single-item 
@@ -233,6 +272,12 @@ footer{
 	color: black;
 	margin: 30px auto;
 	text-align: left;
+	transition: 0.5s;
+}
+
+.wrapper .prev-comments .single-item:hover
+{
+	border-color: #148b6d;
 }
 
 .wrapper .prev-comments .single-item h4 
@@ -324,6 +369,13 @@ table > thead > tr > th
 	transition: 0.5s;
 }
 
+table > thead > tr > th:hover
+{
+	color: rgb(148, 148, 148);
+	font-size: 17px;
+	font-weight: bold;
+}
+
 table > tbody > tr > td
 {
 	text-align: center;
@@ -332,9 +384,11 @@ table > tbody > tr > td
 	transition: 0.5s;
 }
 
-table > tbody > tr > td:hover, table > thead > tr > th:hover
+table > tbody > tr > td:hover
 {
 	color: rgb(148, 148, 148);
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .character_title

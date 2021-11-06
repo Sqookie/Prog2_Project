@@ -14,7 +14,7 @@
         /* HOME PAGE */
         "home_page"=>
         '
-            <h1>Patch notes</h1>
+        <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Patch notes</a></h1>
             <span class="version_title">Verzió 3.3.0 (2021 Szeptember 23)</span>
             <ul class="home_ul">
                 <li>Korlátozott idejű kihívás, a Rush to Purity hozzáadva a Boss Rush módhoz.</li>
@@ -102,7 +102,7 @@
         /* CHARACTER PAGE */
         "character_header" =>
         '
-            <div class="character_title">A karakter fejlesztése a következő bónuszokat biztosítja:</div>
+            <div class="character_title">A karakter fejlesztése a következő bónuszokat biztosítj<a href="https://space.bilibili.com/73589819" target="_blank">a</a>:</div>
             <div class="character_text">
             - <strong>1 csillag</strong>: Permanens +1 élet (ár: 500 drágakő) <br>
             - <strong>2 csillag</strong>: Permanens +1 pajzs (ár: 1000 drágakő) <br>

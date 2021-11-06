@@ -14,7 +14,7 @@
         /* HOME PAGE */
         "home_page"=>
         '
-            <h1>补丁说明</h1>
+        <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">补丁说明</a></h1>
             <span class="version_title">版本 3.3.0 (2021年 9月 23号)</span>
             <ul class="home_ul">
                 <li>在试炼之地模式中添加了新的限时挑战。</li>
@@ -101,7 +101,7 @@
         /* CHARACTER PAGE */
         "character_header" =>
         '
-            <div class="character_title">升级角色会给予以下效果:</div>
+            <div class="character_title">升级角色会给予以下效<a href="https://space.bilibili.com/73589819" target="_blank">果</a>:</div>
             <div class="character_text">
             - <strong>1 星</strong>: 增加1点血量 (花费: 500 蓝币) <br>
             - <strong>2 星</strong>: 增加1点护盾 (花费: 1000 蓝币) <br>

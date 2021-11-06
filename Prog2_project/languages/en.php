@@ -14,7 +14,7 @@
         /* HOME PAGE */
         "home_page"=>
         '
-            <h1>Patch notes</h1>
+            <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Patch notes</a></h1>
             <span class="version_title">Version 3.3.0 (23rd September 2021)</span>
             <ul class="home_ul">
                 <li>Added a limited-time challenge, Rush to Purity, to Boss Rush mode.</li>
@@ -102,7 +102,7 @@
         /* CHARACTER PAGE */
         "character_header" =>
         '
-            <div class="character_title">Leveling up a character gives the following bonuses:</div>
+            <div class="character_title">Leveling up a character gives the following bonuse<a href="https://space.bilibili.com/73589819" target="_blank">s</a>:</div>
             <div class="character_text">
             - <strong>1 star</strong>: Permanent +1 health (cost: 500 gems) <br>
             - <strong>2 stars</strong>: Permanent +1 armor (cost: 1000 gems) <br>

@@ -48,28 +48,37 @@
 				$body = $lang['hi'] . '<strong>' . $name . '</strong>' . $lang['comma'] . $lang['log_in_now'];
 				$subject = $lang['subject'];
 
-				$headers = array(
+				$headers = array
+				(
 					'Authorization: Bearer API_key',
 					'Content-Type: application/json'
 				);
 		
-				$data = array(
-					"personalizations" => array(
-						array(
-							"to" => array(
-								array(
+				$data = array
+				(
+					"personalizations" => array
+					(
+						array
+						(
+							"to" => array
+							(
+								array
+								(
 									"email" => $email,
 									"name" => $name
 								)
 							)
 						)
 					),
-					"from" => array(
+					"from" => array
+					(
 						"email" => "something@gmail.com"
 					),
 					"subject" => $subject,
-					"content" => array(
-						array(
+					"content" => array
+					(
+						array
+						(
 							"type" => "text/html",
 							"value" => $body
 						)
