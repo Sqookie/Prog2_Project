@@ -1,9 +1,11 @@
 # Prog2_project
 
-**Soul Knight was created back in 2017, now it has got more than 300 weapons, almost 20 characters. That's why I'm creating this website to make data searching easier.**
+**Soul Knight was created back in 2017, now it has got more than 300 weapons and almost 20 characters.** \
+**That's why I'm creating this website to make data searching easier.**
 
 ## This website will contain:
-* **User login, sign up function with email notfication**
+* **User sign in function**
+* **User sign up function with email notfication**
 * **Search bar to make weapon searching easier**
 * **Comment section for the users at the weapon page**
 
@@ -23,10 +25,10 @@
 * **Fixed language dropdown menu bug**
 
 ### 2021.09.21
-* **Added a beutiful background**
+* **Added a beautiful background**
 
 ### 2021.09.23
-* **Changed some code to php**
+* **Changed some html code to php**
 
 ### 2021.09.25
 * **Added sign in, sign up function**
@@ -45,6 +47,7 @@
 
 ### 2021.10.25
 * **Added content to weapon page with search bar**
+* **Added 1 easter egg**
 
 ### 2021.10.29
 * **Added content to home page**
@@ -61,4 +64,14 @@
 * **Added transition to the buttons, input fields, table elements**
 
 ### 2021.11.06
-* **Added more transitions, and 2 more easter eggs**
+* **Added transitions**
+* **Added 2 easter eggs**
+
+### 2021.11.07
+* **Added transitions**
+* **Added custom scrollbar**
+* **Added weapon filter button**
+* **Changed the comment tags in the code**
+* **Changed some code in weapon.php**
+* **Changed some code in style.css**
+* **Added 3 easter eggs**
