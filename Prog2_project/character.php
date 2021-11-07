@@ -1,7 +1,9 @@
-<!-- CHARACTER HEADER -->
+<div class="container-fluid">
+
+<!-- =========== CHARACTER HEADER =========== -->
 <?php echo $lang['character_header'] ?>
 
-<!-- CHARACTER TABLE -->
+<!-- =========== CHARACTER TABLE =========== -->
 <div style="overflow-y: auto;">
     <table>
         <thead>
@@ -161,7 +163,7 @@
             <tr>
                 <td>
                     <img src="img/characters/Priest_icon.png" class="CharacterSize" alt="Priest"><br>
-                    <a><strong><?php echo $lang['priest'] ?></strong></a>
+                    <a href="https://www.youtube.com/watch?v=UjTv8ivh7mY" target="_blank"><strong><?php echo $lang['priest'] ?></strong></a>
                 </td>
                 <td>3(4)</td>
                 <td>5(6)</td>
@@ -286,4 +288,5 @@
             </tr>
         </tbody>
     </table>
+</div>
 </div>

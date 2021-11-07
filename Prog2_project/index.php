@@ -12,32 +12,31 @@
 ?>
 
 <!doctype html>
-<html lang="<?php $curr_lang ?>">
+<html lang="<?php echo $curr_lang ?>">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
         <title><?php echo $lang['title'] ?></title>
     </head>
 <body>
-
+    <!-- =========== NAVIGATION BAR =========== -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php?page=home&lang=<?php echo $curr_lang ?>">
                 <img src="img/logo.jpg" alt="Logo" width="45px" style="padding-left: 5px"></img>
             </a>    
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <?php
-                /* HOME PAGE */
+                /* =========== HOME PAGE =========== */
                 if($_GET['page'] == 'home')
                 {
                     echo
@@ -56,10 +55,10 @@
                         </li>
                     ';
                 }
-                /* BEFORE SIGN IN */
+                /* =========== BEFORE SIGN IN =========== */
                 if($_SESSION['signedin'] != 'yes')
                 {
-                    /* SIGN IN PAGE */
+                    /* =========== SIGN IN PAGE =========== */
                     if($_GET['page'] == 'signin')
                     {
                         echo
@@ -79,10 +78,10 @@
                         ';
                     }
                 }
-                /* AFTER SIGN IN */
+                /* =========== AFTER SIGN IN =========== */
                 else
                 {   
-                    /* WEAPON PAGE */
+                    /* =========== WEAPON PAGE =========== */
                     if($_GET['page'] == 'weapon')
                     {
                         echo
@@ -101,7 +100,7 @@
                             </li>
                         ';
                     }
-                    /* CHARACTER PAGE */
+                    /* =========== CHARACTER PAGE =========== */
                     if($_GET['page'] == 'character')
                     {
                         echo
@@ -120,7 +119,7 @@
                             </li>
                         ';
                     }
-                    /* SIGN OUT PAGE */
+                    /* =========== SIGN OUT PAGE =========== */
                     if($_GET['page'] == 'signout')
                     {
                         echo
@@ -140,7 +139,7 @@
                         ';
                     }
                 }
-                /* LANGUAGE DROPDOWN MENU */
+                /* =========== LANGUAGE DROPDOWN MENU =========== */
                 echo
                 '
                     <li class="nav-item dropdown">
@@ -190,6 +189,7 @@
 
     <div class="container-fluid">
 		
+        <!-- ========== CONNECT TO THE DATABASE ========== -->
 		<?php
 			
 			$l = mysqli_connect("localhost", "root", "", "prog2_project");
@@ -210,9 +210,9 @@
 		
 	</div>
 
+    <!-- =========== COPYRIGHT FOOTER =========== -->
     <footer><?php echo $lang['copyright'] ?></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>

@@ -1,7 +1,7 @@
 <div class="container">
 
 <?php
-    /* SIGN UP WITH SENDGRID EMAIL FUNCTION */
+    /* =========== SIGN UP WITH SENDGRID EMAIL NOTIFICATION =========== */
     if(isset($_POST["signupbutton"]))
 	{
 		$name = mysqli_real_escape_string($l, filter_var($_POST["name"],FILTER_SANITIZE_SPECIAL_CHARS));
@@ -44,7 +44,7 @@
 			
 				echo '<script>alert("'. $lang['successful_registration'] .'")</script>';
 				
-				/* EMAIL NOTIFICATION */
+				/* =========== EMAIL NOTIFICATION =========== */
 				$body = $lang['hi'] . '<strong>' . $name . '</strong>' . $lang['comma'] . $lang['log_in_now'];
 				$subject = $lang['subject'];
 
@@ -102,7 +102,7 @@
 		}
 	}
 
-	/* SIGN IN */
+	/* =========== SIGN IN =========== */
 	if(isset($_POST['signinbutton']))
 	{
 		$email = mysqli_real_escape_string($l, filter_var($_POST["email"],FILTER_SANITIZE_SPECIAL_CHARS));
@@ -131,7 +131,7 @@
 	}
 ?>
 
-<!-- SIGN IN/UP FORM -->
+<!-- =========== SIGN IN AND SIGN UP FORM =========== -->
 <div class="row signin-page form">
 	<div class="col-md-4" id="signin">
 		<h1><?php echo $lang['signin'] ?></h1>
@@ -157,7 +157,7 @@
 	</div>
 </div>
 
-<!-- DISPLAY/HIDE FORM FUNCTION -->
+<!-- =========== DISPLAY/HIDE FORM FUNCTION =========== -->
 <script>
 var a
 function show_hide()
@@ -177,11 +177,12 @@ function show_hide()
 }
 </script>
 
-</div>
-
+<!-- =========== PREVENT FORM RESUBMISSION =========== -->
 <script>
 if(window.history.replaceState) 
 {
     window.history.replaceState(null, null, window.location.href);
 }
 </script>
+
+</div>

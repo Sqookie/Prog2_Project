@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    /* LANGUAGES */
+    /* =========== LANGUAGES =========== */
     if(!isset($_SESSION['lang']))
         $_SESSION['lang'] = "en";
     else if(isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang']))
@@ -16,7 +16,7 @@
 
     require_once "languages/" . $_SESSION['lang']  . ".php";
 
-    /* PAGES */
+    /* =========== PAGES =========== */
     if(!isset($_SESSION['page']))
         $_SESSION['page'] = "home";
     else if(isset($_GET['page']) && $_SESSION['page'] != $_GET['page'] && !empty($_GET['page']))

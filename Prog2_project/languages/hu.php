@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (
-        /* MENU */
+        /* =========== MENU =========== */
         "title" => "Soul Knight",
         "home" => "Főoldal",
         "weapon" => "Fegyver",
@@ -11,7 +11,7 @@
         "lang_hu" => "Magyar",
         "lang_cn" => "Kínai",
 
-        /* HOME PAGE */
+        /* =========== HOME PAGE =========== */
         "home_page"=>
         '
         <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Patch notes</a></h1>
@@ -57,15 +57,20 @@
             </ul>
         ',
         
-        /* WEAPON PAGE */
+        /* =========== WEAPON PAGE =========== */
         "weapon_header" =>
         '
             <div class="weapon_title">Áttekintés</div>
             <div class="weapon_text">
-                A Pincében az összes megszerzett (legalább egyszer felvett) fegyver megjelenik a statisztikával és a
-                megszerzett fegyverek számával együtt. Ezt a számot növeli, ha a fegyvert a Gashapon gépből,
-                a nappaliban található ládából, a futás során talált ládákból, az automatákból vagy a boltból futás közben vásárolja meg.
-                A Starter Weapons esetében a frissítést követően a nem frissített verziójú Pince-kereteket véglegesen lecserélik frissítettekre.
+                A Pincében az összes megszerzett (legalább egyszer felvett) fegyver megjelenik a statisztikával és a megszerzett fegyverek számával együtt. 
+            </div>
+            <div class="weapon_text">
+                Ezt a számot növeli, ha a fegyvert a Gashapon gépből, a nappaliban található ládából, a futás során talált ládákból, az automatákból vagy a boltból futás közben vásárolja meg.
+            </div>
+            <div class="weapon_text">
+                A kezdő fegyverek esetében a frissítést követően a nem frissített verziójú Pince-kereteket véglegesen lecserélik frissítettekre.
+            </div>
+            <div class="weapon_text">
                 Van egy üres keret is, amely üres kézzel történő támadást jelent. A szezonális fegyverek nem jelennek meg a Pincében.             
             </div>
         ',
@@ -84,12 +89,16 @@
         "comment_weapon" => "Megjegyzés a fegyverre",
         "no_weapon_found" => "Nincsen találat",
         "search_weapon" => "Keresés a fegyverre",
+        "filter_comment" => "Szűrés a fegyverre a megjegyzésekből",
+        "filter" => "Szűrés",
         "select_weapon" => "----- Fegyver választás -----",
         "comment" => "Megjegyzés",
         "enter_your_comment" => "Írd le a megjegyzésedet",
         "all_comments" => "Összes megjegyzések",
+        "filtered_comments" => "Kiszűrt megjegyzések",
         "comment_successful" => "Sikeres megjegyzés hozzáadás!",
         "choose_one_below" => "Kérlek válassz alulról egyet",
+        "no_comment_available" => "Nincs még megjegyzés",
 
         "search_for_weapon" => "Keresés a fegyverre",
         "search" => "Keresés",
@@ -99,17 +108,29 @@
         "crit_chance" => "Kritikus Esély",
         "inaccuracy" => "Pontatlanság",
 
-        /* CHARACTER PAGE */
+        /* =========== CHARACTER PAGE =========== */
         "character_header" =>
         '
-            <div class="character_title">A karakter fejlesztése a következő bónuszokat biztosítj<a href="https://space.bilibili.com/73589819" target="_blank">a</a>:</div>
+            <div class="character_title">A karakter fejlesztése a következő bónuszokat biztosítja:</div>
             <div class="character_text">
-            - <strong>1 csillag</strong>: Permanens +1 élet (ár: 500 drágakő) <br>
-            - <strong>2 csillag</strong>: Permanens +1 pajzs (ár: 1000 drágakő) <br>
-            - <strong>3 csillag</strong>: Permanens +20 energia (ár: 1500 drágakő) <br>
-            - <strong>4 csillag</strong>: 2 másodperccel csökkenti a képességedet (ár: 2000 drágakő) <br>
-            - <strong>5 csillag</strong>: Képesség fejlesztése - Különböző hatások minden karakterhez és képességekhez. Egyetlen frissítés után minden képességre hatással van  (ár: 2500 drágakő) <br>
-            - <strong>Bónusz</strong>: A karakter kap egy permanens buffot, amellyel kiegészíti a képességét/játék stílusát (ár: 5000 drágakő) <br>
+                - <strong>1 csillag</strong>: Permanens +1 élet (ár: 500 drágakő)
+            </div>
+            <div class="character_text">
+                - <strong>2 csillag</strong>: Permanens +1 pajzs (ár: 1000 drágakő)
+            </div> 
+            <div class="character_text">
+                - <strong>3 csillag</strong>: Permanens +20 energia (ár: 1500 drágakő)
+            </div>
+            <div class="character_text">
+                - <strong>4 csillag</strong>: 2 másodperccel csökkenti a képességedet (ár: 2000 drágakő)
+            </div>
+            <div class="character_text">
+                - <strong>5 csillag</strong>: Képesség fejlesztése - Különböző hatások minden karakterhez és képességekhez. Egyetlen frissítés után minden képességre hatással van  (ár: 2500 drágakő)
+            </div>
+            <div class="character_text">
+                - <strong>Bónusz</strong>: A karakter kap egy permanens buffot, amellyel kiegészíti a képességét/játék stílusát (ár: 5000 drágakő)
+            </div>
+            <div class="character_text">
             - <strong>Bónusz 2</strong>: Permanensé váltja a karakter kezdő fegyverét (ár: 8000 drágakő)
             </div>
             <div class="character_title">Karakterek statisztikája, ára, buffja</div>
@@ -224,7 +245,7 @@
         "element_envoy_price" => "Echo Amber-el aktiválni",
         "element_envoy_buff" => "Immun a tűzre, kevesebb robbanást okoz, és növeli az ellenség tűzkárát. Immun a lefagyáshoz és extra fagyási időt tesz az ellenségeknek.",
 
-        /* SIGN IN/UP PAGE */
+        /* =========== SIGN IN/UP PAGE =========== */
         "signin" => "Bejelentkezés",
         "signup" => "Regisztráció",
         "username" => "Felhasználó név",
@@ -245,7 +266,7 @@
         "wrong_email_or_password" => "Hibás email vagy jelszó!",
         "user_not_exist" => "Nem létezik ilyen felhasználó!",
 
-        /* SEND EMAIL */
+        /* =========== SEND EMAIL =========== */
         "hi" => "Szia ",
         "comma" => ",",
         "log_in_now" =>
@@ -269,7 +290,7 @@
         ',
         "subject" => "Köszönöm, hogy regisztráltál!",
 
-        /* COPYRIGHT */
+        /* =========== COPYRIGHT =========== */
         "copyright" => "&copy; " . date("Y") . ". - Minden jog fenntartva!",
     );
 ?>

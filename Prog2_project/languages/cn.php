@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (   
-        /* MENU */
+        /* =========== MENU =========== */
         "title" => "元气骑士",
         "home" => "主页",
         "weapon" => "武器",
@@ -11,7 +11,7 @@
         "lang_hu" => "匈牙利语",
         "lang_cn" => "中文",
 
-        /* HOME PAGE */
+        /* =========== HOME PAGE =========== */
         "home_page"=>
         '
         <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">补丁说明</a></h1>
@@ -57,14 +57,20 @@
             </ul>
         ',
         
-        /* WEAPON PAGE */
+        /* =========== WEAPON PAGE =========== */
         "weapon_header" =>
         '
             <div class="weapon_title">概述</div>
             <div class="weapon_text">
                 在地窖中，所有曾经获得过（至少获得一次）的武器都会与它们的统计数据和获得次数一起显示。
-                通过从扭蛋机、客厅内的宝箱、跑步过程中发现的箱子、自动售货机或在跑步过程中通过购买从商店获得该武器来增加该数字。
-                对于入门武器，一旦升级，其未升级版本的地窖框架将永久替换为升级版本。 
+            </div>
+            <div class="weapon_text">
+                通过从扭蛋机、客厅内的宝箱、跑步过程中发现的箱子、自动售货机或在跑步过程中通过购买从商店获得该武器来增加该数字
+            </div>
+            <div class="weapon_text">
+                对于入门武器，一旦升级，其未升级版本的地窖框架将永久替换为升级版本。
+            </div>
+            <div class="weapon_text">
                 还有一个空框代表手刀。 季节性武器不会出现在地窖中。 
             </div>
         ',
@@ -83,12 +89,16 @@
         "comment_weapon" => "评论武器",
         "no_weapon_found" => "没找到相关武器",
         "search_weapon" => "查找武器",
+        "filter_comment" => "从评论里筛选武器",
+        "filter" => "筛选",
         "select_weapon" => "----- 选择武器 -----",
         "comment" => "评论",
         "enter_your_comment" => "输入你的评论",
         "all_comments" => "所有评论",
+        "filtered_comments" => "筛选后的评论",
         "comment_successful" => "评论成功！",
         "choose_one_below" => "请在下方选择一个",
+        "no_comment_available" => "没有评论",
 
         "search_for_weapon" => "搜索武器",
         "search" => "搜索",
@@ -98,18 +108,30 @@
         "crit_chance" => "暴击率",
         "inaccuracy" => "偏移率",
 
-        /* CHARACTER PAGE */
+        /* =========== CHARACTER PAGE =========== */
         "character_header" =>
         '
-            <div class="character_title">升级角色会给予以下效<a href="https://space.bilibili.com/73589819" target="_blank">果</a>:</div>
+            <div class="character_title">升级角色会给予以下效果：</div>
             <div class="character_text">
-            - <strong>1 星</strong>: 增加1点血量 (花费: 500 蓝币) <br>
-            - <strong>2 星</strong>: 增加1点护盾 (花费: 1000 蓝币) <br>
-            - <strong>3 星</strong>: 增加20点蓝量 (花费: 1500 蓝币) <br>
-            - <strong>4 星</strong>: 技能冷却时间减少2秒 (花费: 2000 蓝币) <br>
-            - <strong>5 星</strong>: 技能升级 - 每个角色的效果都不一样， 升级后将永久影响所有技能 (花费: 2500 蓝币) <br>
-            - <strong>额外</strong>: 角色获得永久增益，以补充他们的技能/游戏风格 (花费: 5000 蓝币) <br>
-            - <strong>额外 2</strong>: 永久升级角色初始武器 (花费: 8000 蓝币)
+                - <strong>1 星</strong>: 增加1点血量 (花费: 500 蓝币)
+            </div>
+            <div class="character_text">
+                - <strong>2 星</strong>: 增加1点护盾 (花费: 1000 蓝币)
+            </div>
+            <div class="character_text">
+                - <strong>3 星</strong>: 增加20点蓝量 (花费: 1500 蓝币)
+            </div>
+            <div class="character_text">
+                - <strong>4 星</strong>: 技能冷却时间减少2秒 (花费: 2000 蓝币)
+            </div>
+            <div class="character_text">
+                - <strong>5 星</strong>: 技能升级 - 每个角色的效果都不一样， 升级后将永久影响所有技能 (花费: 2500 蓝币)
+            </div>
+            <div class="character_text">
+                - <strong>额外</strong>: 角色获得永久增益，以补充他们的技能/游戏风格 (花费: 5000 蓝币)
+            </div>
+            <div class="character_text">
+                - <strong>额外 2</strong>: 永久升级角色初始武器 (花费: 8000 蓝币)
             </div>
             <div class="character_title">角色数据、价格和增益</div>
             <div class="character_text">
@@ -223,7 +245,7 @@
         "element_envoy_price" => "维度指引手册解锁",
         "element_envoy_buff" => "降低爆炸伤害并免疫火焰，对敌人火焰伤害提升，免疫冰冻对敌人的冰冻时间增加[角色限定]。",
         
-        /* SIGN IN/UP PAGE */
+        /* =========== SIGN IN/UP PAGE =========== */
         "signin" => "登录",
         "signup" => "注册",
         "username" => "用户名",
@@ -244,7 +266,7 @@
         "wrong_email_or_password" => "错误邮箱或密码！",
         "user_not_exist" => "用户不存在！",
         
-        /* SEND EMAIL */
+        /* =========== SEND EMAIL =========== */
         "hi" => "你好 ",
         "comma" => "，",
         "log_in_now" =>
@@ -268,7 +290,7 @@
         ',
         "subject" => "感谢您的注册",
 
-        /* COPYRIGHT */
+        /* =========== COPYRIGHT =========== */
         "copyright" => "&copy; " . date("Y") . ". - 曲奇君有限公司 版权所有",
     );
 ?>

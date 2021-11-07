@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (
-        /* MENU */
+        /* =========== MENU =========== */
         "title" => "Soul Knight",
         "home" => "Home",
         "weapon" => "Weapon",
@@ -11,7 +11,7 @@
         "lang_hu" => "Hungarian",
         "lang_cn" => "Chinese",
 
-        /* HOME PAGE */
+        /* =========== HOME PAGE =========== */
         "home_page"=>
         '
             <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Patch notes</a></h1>
@@ -57,15 +57,21 @@
             </ul>
         ',
         
-        /* WEAPON PAGE */
+        /* =========== WEAPON PAGE =========== */
         "weapon_header" =>
         '
             <div class="weapon_title">Overview</div>
             <div class="weapon_text">
                 In the Cellar, all weapons that have ever been obtained (picked up at least once) are displayed along with their stats and the number of times obtained.
-                This number is increased by obtaining that weapon from the Gashapon Machine, the Chest inside the Living Room,
-                Chests found during a run, Vending Machines, or from the shop via purchase during a run. 
-                For Starter Weapons, once upgraded, their Cellar frames of unupgraded versions will be permanently replaced by their upgraded ones. 
+            </div>
+            <div class="weapon_text">
+                This number is increased by obtaining that weapon from the Gashapon Machine, the Chest inside the Living Room,<br>
+                Chests found during a run, Vending Machines, or from the shop via purchase during a run.
+            </div>     
+            <div class="weapon_text">
+                For Starter Weapons, once upgraded, their Cellar frames of unupgraded versions will be permanently replaced by their upgraded ones.
+            </div>
+            <div class="weapon_text"> 
                 There is also an empty frame that represents attacking with an empty hand. Seasonal weapons will not appear in the Cellar.
             </div>
         ',
@@ -84,12 +90,16 @@
         "comment_weapon" => "Comment on a weapon",
         "no_weapon_found" => "No weapon found",
         "search_weapon" => "Search for a weapon",
+        "filter_comment" => "Filter weapon from the comments",
+        "filter" => "Filter",
         "select_weapon" => "----- Select weapon -----",
         "comment" => "Comment",
         "enter_your_comment" => "Enter your comment",
         "all_comments" => "All comments",
+        "filtered_comments" => "Filtered comments",
         "comment_successful" => "Comment successfully added!",
         "choose_one_below" => "Please choose one below",
+        "no_comment_available" => "No comment available",
  
         "search_for_weapon" => "Search For a Weapon",
         "search" => "Search",
@@ -99,18 +109,30 @@
         "crit_chance" => "Crit Chance",
         "inaccuracy" => "Inaccuracy",
 
-        /* CHARACTER PAGE */
+        /* =========== CHARACTER PAGE =========== */
         "character_header" =>
         '
-            <div class="character_title">Leveling up a character gives the following bonuse<a href="https://space.bilibili.com/73589819" target="_blank">s</a>:</div>
+            <div class="character_title">Leveling up a character gives the following bonuses:</div>
             <div class="character_text">
-            - <strong>1 star</strong>: Permanent +1 health (cost: 500 gems) <br>
-            - <strong>2 stars</strong>: Permanent +1 armor (cost: 1000 gems) <br>
-            - <strong>3 stars</strong>: Permanent +20 energy (cost: 1500 gems) <br>
-            - <strong>4 stars</strong>: Reduces skill cooldown by 2 seconds (cost: 2000 gems) <br>
-            - <strong>5 stars</strong>: Skill upgrade - Different effects for each character and skill. Affects all skills for a single upgrade (cost: 2500 gems) <br>
-            - <strong>Bonus</strong>: The character obtains a permanent buff that complements their skills/play style (cost: 5000 gems) <br>
-            - <strong>Bonus 2</strong>: Permanently upgrades the characters starter weapon (cost: 8000 gems)
+                - <strong>1 star</strong>: Permanent +1 health (cost: 500 gems)
+            </div>
+            <div class="character_text">
+                - <strong>2 stars</strong>: Permanent +1 armor (cost: 1000 gems)
+            </div>
+            <div class="character_text">
+                - <strong>3 stars</strong>: Permanent +20 energy (cost: 1500 gems)
+            </div>
+            <div class="character_text">
+                - <strong>4 stars</strong>: Reduces skill cooldown by 2 seconds (cost: 2000 gems)
+            </div>
+            <div class="character_text">
+                - <strong>5 stars</strong>: Skill upgrade - Different effects for each character and skill. Affects all skills for a single upgrade (cost: 2500 gems)
+            </div>
+            <div class="character_text">
+                - <strong>Bonus</strong>: The character obtains a permanent buff that complements their skills/play style (cost: 5000 gems)
+            </div>
+            <div class="character_text">
+                - <strong>Bonus 2</strong>: Permanently upgrades the characters starter weapon (cost: 8000 gems)
             </div>
             <div class="character_title">Character Stats, Price and Buffs</div>
             <div class="character_text">
@@ -224,7 +246,7 @@
         "element_envoy_price" => "Unlock with Echo Amber",
         "element_envoy_buff" => "Immune to fire, take less explosion damage, and increase fire damage to enemies. Immune to freeze, and apply extra freeze time to enemies.",
 
-        /* SIGN IN/UP PAGE */
+        /* =========== SIGN IN/UP PAGE =========== */
         "signin" => "Sign in",
         "signup" => "Sign up",
         "username" => "Username",
@@ -245,7 +267,7 @@
         "wrong_email_or_password" => "Wrong email or password!",
         "user_not_exist" => "User does not exist!",
 
-        /* SEND EMAIL */
+        /* =========== SEND EMAIL =========== */
         "hi" => "Hi ",
         "comma" => ",",
         "log_in_now" =>
@@ -269,7 +291,7 @@
         ',
         "subject" => "Thank you for your registration!",
 
-        /* COPYRIGHT */
+        /* =========== COPYRIGHT =========== */
         "copyright" => "&copy; " . date("Y") . ". - All rights reserved!",
     );
 ?>
