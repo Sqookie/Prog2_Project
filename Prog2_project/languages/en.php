@@ -90,7 +90,7 @@
         "comment_weapon" => "Comment on a weapon",
         "no_weapon_found" => "No weapon found",
         "search_weapon" => "Search for a weapon",
-        "filter_comment" => "Filter weapon from the comments",
+        "filter_comment" => "Filter weapon from the comments (based on selected language)",
         "filter" => "Filter",
         "select_weapon" => "----- Select weapon -----",
         "comment" => "Comment",

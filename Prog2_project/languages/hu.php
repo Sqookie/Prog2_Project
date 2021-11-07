@@ -89,7 +89,7 @@
         "comment_weapon" => "Megjegyzés a fegyverre",
         "no_weapon_found" => "Nincsen találat",
         "search_weapon" => "Keresés a fegyverre",
-        "filter_comment" => "Szűrés a fegyverre a megjegyzésekből",
+        "filter_comment" => "Szűrés a fegyver megjegyzésekből (kiválasztott nyelvtől függ)",
         "filter" => "Szűrés",
         "select_weapon" => "----- Fegyver választás -----",
         "comment" => "Megjegyzés",

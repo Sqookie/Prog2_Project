@@ -210,7 +210,7 @@ if(isset($_POST['comment_change_button']) || isset($_POST['comment_button']) || 
     if(isset($_POST['filter_button']))
     {
         $weapon = mysqli_real_escape_string($l, filter_var($_POST["filter_data"],FILTER_SANITIZE_SPECIAL_CHARS));
-        $query = "SELECT * FROM comment WHERE weapon IN ( SELECT weapon_$curr_lang FROM weapon WHERE CONCAT(weapon_en,weapon_hu,weapon_cn) LIKE '%$weapon%')";
+        $query = "SELECT * FROM comment WHERE weapon IN (SELECT weapon_$curr_lang FROM weapon WHERE CONCAT(weapon_en,weapon_hu,weapon_cn) LIKE '%$weapon%')";
         
         $exists = mysqli_query($l, $query);
         $count = mysqli_num_rows($exists);
