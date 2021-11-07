@@ -416,6 +416,13 @@ ul.home_ul > li:hover
 {
 	width: 55px;
 	height: 50px;
+	transition: 0.5s;
+}
+
+.CharacterSize:hover
+{
+	width: 65px;
+	height: 60px;
 }
 
 table > thead > tr, table > tbody > tr
@@ -570,6 +577,7 @@ p
 	margin-top: 20px;
 	color: white;
 	font-weight: bold;
+	transition: 0.5s;
 }
 
 p a
@@ -601,6 +609,12 @@ p a:hover
 {
 	color: rgba(255,255,255,.55);
 	font-weight: bold;
+	transition: 0.5s;
+}
+
+.dropdown-item:hover
+{
+	font-size: 17px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -612,4 +626,14 @@ p a:hover
 {
 	color: black !important;
 	background-color: #f8f9fa !important;
+}
+
+li.nav-item > a.nav-link
+{
+	transition: 0.5s;
+}
+
+li.nav-item > a.nav-link:hover
+{
+	font-size: 22px;
 }
