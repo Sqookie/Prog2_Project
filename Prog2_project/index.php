@@ -9,7 +9,19 @@
 
     $curr_lang = $_SESSION['lang'];
     $curr_page = $_SESSION['page'];
-?>
+
+    /* =========== URL CHECK =========== */
+    $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    $url_components = parse_url($url);
+    parse_str($url_components['query'], $url_param);
+
+    /* =========== PAGE, LANGUAGE CHECK =========== */
+    if($url_param['page'] != $curr_page || $url_param['lang'] != $curr_lang)
+    {
+        header("Refresh: 0, index.php?page=$curr_page&lang=$curr_lang");
+        die();
+    }
+?> 
 
 <!doctype html>
 <html lang="<?php echo $curr_lang ?>">
@@ -213,7 +225,6 @@
 		
         <!-- ========== CONNECT TO THE DATABASE ========== -->
 		<?php
-			
 			$l = mysqli_connect("localhost", "root", "", "prog2_project");
 		
 			switch($_GET['page'])
@@ -240,13 +251,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- =========== PREVENT FORM RESUBMISSION =========== -->
+    <!-- ========== PREVENT FORM RESUBMISSION ========== -->
     <script>
     if(window.history.replaceState) 
     {
         window.history.replaceState(null, null, window.location.href);
     }
     </script>
-
-
 </html>
