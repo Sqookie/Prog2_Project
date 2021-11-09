@@ -75,3 +75,8 @@
 * **Changed some code in weapon.php**
 * **Changed some code in style.css**
 * **Added 3 easter eggs**
+
+### 2021.11.09
+* **Changed signin.php into signin.php and signup.php**
+* **Changed weapon.php into weapon_table.php and weapon_comment.php**
+* **Fixed the bug when changing the language won't stay on the page**
