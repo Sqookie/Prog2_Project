@@ -5,6 +5,8 @@
         "title" => "Soul Knight",
         "home" => "Főoldal",
         "weapon" => "Fegyver",
+        "weapon_table" => "Fegyver Tábla",
+        "weapon_comment" => "Fegyver Megjegyzések",
         "character" => "Karakter",
         "language" => "Nyelv",
         "lang_en" => "Angol",
@@ -73,6 +75,9 @@
             <div class="weapon_text">
                 Van egy üres keret is, amely üres kézzel történő támadást jelent. A szezonális fegyverek nem jelennek meg a Pincében.             
             </div>
+            <div class="weapon_text"> 
+                Ha szeretnél megjegyzést tenni a fegyverre, kérlek <a class="weapon_change" href="index.php?page=weapon_comment&lang='.$_SESSION['lang'].'">kattincs ide</a>.
+            </div>
         ',
 
         "comment_header" =>
@@ -81,14 +86,12 @@
             <div class="weapon_text">
                 Minden fegyvernek a megjegyzését megtalálod itt, oszd meg a véleményeidet nyugodtan és legyetek kultúráltak!
             </div>
-            <div class="weapon_text">
-                Ha szeretnél fegyvert keresni akkor nyomd meg az alatta lévő gombot.
+            <div class="weapon_text"> 
+                Ha szeretnél fegyvert keresni, kérlek <a class="weapon_change" href="index.php?page=weapon_table&lang='.$_SESSION['lang'].'">kattincs ide</a>.
             </div>
         ',
 
-        "comment_weapon" => "Megjegyzés a fegyverre",
         "no_weapon_found" => "Nincsen találat",
-        "search_weapon" => "Keresés a fegyverre",
         "filter_comment" => "Szűrés a fegyver megjegyzésekből (kiválasztott nyelvtől függ)",
         "filter" => "Szűrés",
         "select_weapon" => "----- Fegyver választás -----",
@@ -97,7 +100,6 @@
         "all_comments" => "Összes megjegyzések",
         "filtered_comments" => "Kiszűrt megjegyzések",
         "comment_successful" => "Sikeres megjegyzés hozzáadás!",
-        "choose_one_below" => "Kérlek válassz alulról egyet",
         "no_comment_available" => "Nincs még megjegyzés",
 
         "search_for_weapon" => "Keresés a fegyverre",

@@ -209,7 +209,7 @@ ul.home_ul > li:hover
 	border-color: #148b6d;
 }
 
-.change_button, .filter_button
+.filter_button
 {
 	padding: 0.375rem 0.75rem;
 	padding-left: 1rem;
@@ -224,7 +224,7 @@ ul.home_ul > li:hover
 	transition: 0.5s;
 }
 
-.change_button:hover, .filter_button:hover
+.filter_button:hover
 {
 	background-color: #148b6d;
     border-color: #148b6d;
@@ -354,7 +354,7 @@ ul.home_ul > li:hover
     color: #00b894;
 }
 
-.wrapper .prev-comments .single-item p 
+.wrapper .prev-comments .single-item  p 
 {
     font-size: medium;
     color: black;
@@ -529,11 +529,6 @@ h1:hover
 	padding: 0 auto;
 }
 
-.display_none
-{
-	display: none;
-}
-
 .sign_form_input
 {
 	width: 100%;
@@ -580,14 +575,14 @@ p
 	transition: 0.5s;
 }
 
-p a
+p a, .weapon_change
 {
 	text-decoration: none;
 	color: cyan;
 	transition: 0.5s;
 }
 
-p a:hover
+p a:hover, .weapon_change:hover
 {
 	color: rgb(73, 158, 158);
 }

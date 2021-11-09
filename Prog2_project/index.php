@@ -68,6 +68,17 @@
                             </li>
                         ';
                     }
+                    /* =========== SIGN UP PAGE =========== */
+                    else if($_GET['page'] == 'signup')
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right active" href="index.php?page=signup&lang='. "$curr_lang" .'">'. $lang['signup'] .'</a>
+                            </li>
+                        ';
+                    }
+                    /* =========== SIGN IN PAGE =========== */
                     else
                     {
                         echo
@@ -80,23 +91,34 @@
                 }
                 /* =========== AFTER SIGN IN =========== */
                 else
-                {   
-                    /* =========== WEAPON PAGE =========== */
-                    if($_GET['page'] == 'weapon')
+                {  
+                    /* =========== WEAPON TABLE =========== */
+                    if($_GET['page'] == 'weapon_table')
                     {
                         echo
                         '
                             <li class="nav-item">
-                                <a class="nav-link bold pad_right active" href="index.php?page=weapon&lang='. "$curr_lang" .'">'. $lang['weapon'] .'</a>
+                                <a class="nav-link bold pad_right active" href="index.php?page=weapon_table&lang='. "$curr_lang" .'">'. $lang['weapon_table'] .'</a>
                             </li>
                         ';
                     }
+                    /* =========== WEAPON COMMENT SECTION =========== */
+                    else if ($_GET['page'] == 'weapon_comment')
+                    {
+                        echo
+                        '
+                            <li class="nav-item">
+                                <a class="nav-link bold pad_right active" href="index.php?page=weapon_comment&lang='. "$curr_lang" .'">'. $lang['weapon_comment'] .'</a>
+                            </li>
+                        ';
+                    }
+                    /* =========== WEAPON TABLE =========== */
                     else
                     {
                         echo
                         '
                             <li class="nav-item">
-                                <a class="nav-link bold pad_right" href="index.php?page=weapon&lang='. "$curr_lang" .'">'. $lang['weapon'] .'</a>
+                                <a class="nav-link bold pad_right" href="index.php?page=weapon_table&lang='. "$curr_lang" .'">'. $lang['weapon_table'] .'</a>
                             </li>
                         ';
                     }
@@ -196,8 +218,10 @@
 		
 			switch($_GET['page'])
 			{
-				case 'weapon': include 'weapon.php'; break;
+				case 'weapon_table': include 'weapon_table.php'; break;
+                case 'weapon_comment': include 'weapon_comment.php'; break;
 				case 'character': include 'character.php'; break;
+                case 'signup': include 'signup.php'; break;
                 case 'signin': include 'signin.php'; break;
 				case 'signout': include 'signout.php'; break;
 
@@ -215,4 +239,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- =========== PREVENT FORM RESUBMISSION =========== -->
+    <script>
+    if(window.history.replaceState) 
+    {
+        window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
+
+
 </html>

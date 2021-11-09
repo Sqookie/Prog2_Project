@@ -1,10 +1,16 @@
 <?php
+    session_start();
+
+    include "./config.php";
+
     $lang = array
     (
         /* =========== MENU =========== */
         "title" => "Soul Knight",
         "home" => "Home",
         "weapon" => "Weapon",
+        "weapon_table" => "Weapon Table",
+        "weapon_comment" => "Weapon Comments",
         "character" => "Character",
         "language" => "Language",
         "lang_en" => "English",
@@ -74,6 +80,9 @@
             <div class="weapon_text"> 
                 There is also an empty frame that represents attacking with an empty hand. Seasonal weapons will not appear in the Cellar.
             </div>
+            <div class="weapon_text"> 
+                If you want to comment on a weapon, please <a class="weapon_change" href="index.php?page=weapon_comment&lang='.$_SESSION['lang'].'">click here</a>.
+            </div>
         ',
 
         "comment_header" =>
@@ -82,14 +91,12 @@
             <div class="weapon_text">
                 You will find every single weapon\'s comment here, feel free to share your opinion and be nice with each other!
             </div>
-            <div class="weapon_text">
-                If you want to search for a weapon, please press the button below.  
+            <div class="weapon_text"> 
+                If you want to search for a weapon, please <a class="weapon_change" href="index.php?page=weapon_table&lang='.$_SESSION['lang'].'">click here</a>.
             </div>
         ',
         
-        "comment_weapon" => "Comment on a weapon",
         "no_weapon_found" => "No weapon found",
-        "search_weapon" => "Search for a weapon",
         "filter_comment" => "Filter weapon from the comments (based on selected language)",
         "filter" => "Filter",
         "select_weapon" => "----- Select weapon -----",
@@ -98,7 +105,6 @@
         "all_comments" => "All comments",
         "filtered_comments" => "Filtered comments",
         "comment_successful" => "Comment successfully added!",
-        "choose_one_below" => "Please choose one below",
         "no_comment_available" => "No comment available",
  
         "search_for_weapon" => "Search For a Weapon",

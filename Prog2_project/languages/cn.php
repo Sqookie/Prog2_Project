@@ -5,6 +5,8 @@
         "title" => "元气骑士",
         "home" => "主页",
         "weapon" => "武器",
+        "weapon_table" => "武器表格",
+        "weapon_comment" => "武器评论",
         "character" => "角色",
         "language" => "语言",
         "lang_en" => "英语",
@@ -73,6 +75,9 @@
             <div class="weapon_text">
                 还有一个空框代表手刀。 季节性武器不会出现在地窖中。 
             </div>
+            <div class="weapon_text"> 
+                如果你想在武器上评论，请<a class="weapon_change" href="index.php?page=weapon_comment&lang='.$_SESSION['lang'].'">点击这里</a>。
+            </div>
         ',
 
         "comment_header" =>
@@ -81,14 +86,12 @@
             <div class="weapon_text">
                 每一个武器的评论你在这里都能找到，尽情分享你的注意吧~ 注意评论礼仪喔！
             </div>
-            <div class="weapon_text">
-                如果你想查找武器，请按下方的按钮。  
+            <div class="weapon_text"> 
+                如果你想搜索武器，请 <a class="weapon_change" href="index.php?page=weapon_table&lang='.$_SESSION['lang'].'">点击这里</a>。
             </div>
         ',
 
-        "comment_weapon" => "评论武器",
         "no_weapon_found" => "没找到相关武器",
-        "search_weapon" => "查找武器",
         "filter_comment" => "从评论里筛选武器 （以目前选择的语言来筛选）",
         "filter" => "筛选",
         "select_weapon" => "----- 选择武器 -----",
@@ -97,7 +100,6 @@
         "all_comments" => "所有评论",
         "filtered_comments" => "筛选后的评论",
         "comment_successful" => "评论成功！",
-        "choose_one_below" => "请在下方选择一个",
         "no_comment_available" => "没有评论",
 
         "search_for_weapon" => "搜索武器",
