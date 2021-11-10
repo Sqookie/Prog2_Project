@@ -72,13 +72,15 @@ if(isset($_POST['filter_button']))
         echo
         '
             <div class="prev-comments"> 
-            <h1>'. $lang['filtered_comments'] .'</h1>
+            <h1>'. $lang['all_comments'] .'</h1>
         ';  
             while ($row = mysqli_fetch_assoc($exists)) 
             {
+?>
+                <div class="<?php if($row['name'] == $_SESSION['name']) {echo "own-single-item";} else {echo "single-item";} ?>">
+<?php
         echo
         '
-                <div class="single-item">
                     <h4>'. $row['name'] .' ('. strtoupper($row['lang']) .')</h4>
                     <h3>'. $row['weapon'] .'</h3>
                     <p>'. $row['comment'] .'</p>
