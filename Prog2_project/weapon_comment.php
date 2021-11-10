@@ -63,7 +63,7 @@ if(isset($_POST['filter_button']))
 {
     $weapon = mysqli_real_escape_string($l, filter_var($_POST["filter_data"],FILTER_SANITIZE_SPECIAL_CHARS));
     $query = "SELECT * FROM comment WHERE weapon IN (SELECT weapon_$curr_lang FROM weapon WHERE CONCAT(weapon_en,weapon_hu,weapon_cn) LIKE '%$weapon%')";
-    
+
     $exists = mysqli_query($l, $query);
     $count = mysqli_num_rows($exists);
 
@@ -99,7 +99,6 @@ if(isset($_POST['filter_button']))
         ';
     }
 }
-/* =========== ALL COMMENTS =========== */
 else
 {
     $query = "SELECT * FROM comment";
@@ -116,9 +115,11 @@ else
         ';  
             while ($row = mysqli_fetch_assoc($exists)) 
             {
+?>
+                <div class="<?php if($row['name'] == $_SESSION['name']) {echo "own-single-item";} else {echo "single-item";} ?>">
+<?php
         echo
         '
-                <div class="single-item">
                     <h4>'. $row['name'] .' ('. strtoupper($row['lang']) .')</h4>
                     <h3>'. $row['weapon'] .'</h3>
                     <p>'. $row['comment'] .'</p>
@@ -139,4 +140,5 @@ else
         ';
     }
 }
+
 ?>

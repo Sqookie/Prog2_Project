@@ -9,18 +9,6 @@
 
     $curr_lang = $_SESSION['lang'];
     $curr_page = $_SESSION['page'];
-
-    /* =========== URL CHECK =========== */
-    $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-    $url_components = parse_url($url);
-    parse_str($url_components['query'], $url_param);
-
-    /* =========== PAGE, LANGUAGE CHECK =========== */
-    if($url_param['page'] != $curr_page || $url_param['lang'] != $curr_lang)
-    {
-        header("Refresh: 0, index.php?page=$curr_page&lang=$curr_lang");
-        die();
-    }
 ?> 
 
 <!doctype html>
@@ -39,7 +27,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php?page=home&lang=<?php echo $curr_lang ?>">
-                <img src="img/logo.jpg" alt="Logo" width="45px" style="padding-left: 5px"></img>
+                <img src="img/logo.jpg" alt="Logo" class="home_pic"></img>
             </a>    
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
