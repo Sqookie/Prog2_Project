@@ -85,3 +85,6 @@
 ### 2021.11.10
 * **Fixed the URL bug.**
 * **Added border for user's own comment**
+
+### 2021.11.14
+* **Bug fixes.**
