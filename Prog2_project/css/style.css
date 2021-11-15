@@ -16,17 +16,7 @@ body
 
 body::-webkit-scrollbar 
 {
-	width: 1em;
-}
-
-body::-webkit-scrollbar-track 
-{
-	background: #212529;
-}
-   
-body::-webkit-scrollbar-thumb 
-{
-	background-color: #148b6d;
+	width: 0;
 }
 
 .home_pic
