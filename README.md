@@ -91,3 +91,6 @@
 
 ### 2021.11.15
 * **Removed custom scrollbar, but it's functionality is still working.**
+
+### 2021.11.16
+* **Changed some button style.**
