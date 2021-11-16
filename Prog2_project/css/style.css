@@ -176,7 +176,7 @@ ul.home_ul > li:hover
 
 .filter_search_bar
 {
-	width: 87%;
+	width: 100%;
 	padding: 5px;
 	border: medium solid #148b6d;
 	border-radius: 6px;
@@ -201,6 +201,14 @@ ul.home_ul > li:hover
     border-radius: 0.25rem;
 	font-weight: bold;
 	transition: 0.5s;
+}
+
+.filter_search
+{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 2%;
 }
 
 .weapon_search:hover, .filter_search:hover
