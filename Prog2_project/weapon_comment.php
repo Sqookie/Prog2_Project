@@ -62,7 +62,12 @@ if(isset($_POST['comment_button']))
 if(isset($_POST['filter_button']))
 {
     $weapon = mysqli_real_escape_string($l, filter_var($_POST["filter_data"],FILTER_SANITIZE_SPECIAL_CHARS));
-    $query = "SELECT * FROM comment WHERE weapon IN (SELECT weapon_$curr_lang FROM weapon WHERE CONCAT(weapon_en,weapon_hu,weapon_cn) LIKE '%$weapon%')";
+    $query = "SELECT * FROM comment WHERE weapon IN
+    (
+        (SELECT weapon_en FROM weapon WHERE CONCAT(weapon_en,weapon_hu,weapon_cn) LIKE '%$weapon%') UNION
+        (SELECT weapon_hu FROM weapon WHERE CONCAT(weapon_en,weapon_hu,weapon_cn) LIKE '%$weapon%') UNION
+        (SELECT weapon_cn FROM weapon WHERE CONCAT(weapon_en,weapon_hu,weapon_cn) LIKE '%$weapon%')
+    )";
 
     $exists = mysqli_query($l, $query);
     $count = mysqli_num_rows($exists);
@@ -72,7 +77,7 @@ if(isset($_POST['filter_button']))
         echo
         '
             <div class="prev-comments"> 
-            <h1>'. $lang['all_comments'] .'</h1>
+            <h1>'. $lang['filtered_comments'] .'</h1>
         ';  
             while ($row = mysqli_fetch_assoc($exists)) 
             {

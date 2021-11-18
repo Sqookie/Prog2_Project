@@ -92,7 +92,7 @@
         ',
 
         "no_weapon_found" => "Nincsen találat",
-        "filter_comment" => "Szűrés a fegyver megjegyzésekből (kiválasztott nyelvtől függ)",
+        "filter_comment" => "Szűrés a fegyver megjegyzésekből",
         "filter" => "Szűrés",
         "select_weapon" => "----- Fegyver választás -----",
         "comment" => "Megjegyzés",

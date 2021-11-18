@@ -92,7 +92,7 @@
         ',
 
         "no_weapon_found" => "没找到相关武器",
-        "filter_comment" => "从评论里筛选武器 （以目前选择的语言来筛选）",
+        "filter_comment" => "从评论里筛选武器",
         "filter" => "筛选",
         "select_weapon" => "----- 选择武器 -----",
         "comment" => "评论",

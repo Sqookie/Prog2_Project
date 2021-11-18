@@ -93,7 +93,7 @@
         ',
         
         "no_weapon_found" => "No weapon found",
-        "filter_comment" => "Filter weapon from the comments (based on selected language)",
+        "filter_comment" => "Filter weapon from the comments",
         "filter" => "Filter",
         "select_weapon" => "----- Select weapon -----",
         "comment" => "Comment",

@@ -7,7 +7,6 @@ html
 body
 {
 	background-image: url("../img/chillyroom_background.jpg");
-	scroll-behavior: smooth;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
