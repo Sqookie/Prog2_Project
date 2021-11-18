@@ -94,3 +94,6 @@
 
 ### 2021.11.16
 * **Changed some button style.**
+
+### 2021.11.18
+* **Bug fixes.**
