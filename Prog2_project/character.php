@@ -1,9 +1,7 @@
-<div class="container-fluid">
-
-<!-- =========== CHARACTER HEADER =========== -->
+<!-- ===================== CHARACTER HEADER ===================== -->
 <?php echo $lang['character_header'] ?>
 
-<!-- =========== CHARACTER TABLE =========== -->
+<!-- ===================== CHARACTER TABLE ===================== -->
 <div style="overflow-y: auto;">
     <table>
         <thead>
@@ -288,5 +286,4 @@
             </tr>
         </tbody>
     </table>
-</div>
 </div>

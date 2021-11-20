@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (
-        /* =========== MENU =========== */
+        /* ===================== MENU ===================== */
         "title" => "Soul Knight",
         "home" => "Főoldal",
         "weapon" => "Fegyver",
@@ -13,7 +13,7 @@
         "lang_hu" => "Magyar",
         "lang_cn" => "Kínai",
 
-        /* =========== HOME PAGE =========== */
+        /* ===================== HOME PAGE ===================== */
         "home_page"=>
         '
         <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Patch notes</a></h1>
@@ -59,7 +59,7 @@
             </ul>
         ',
         
-        /* =========== WEAPON PAGE =========== */
+        /* ===================== WEAPON PAGE ===================== */
         "weapon_header" =>
         '
             <div class="weapon_title">Áttekintés</div>
@@ -76,7 +76,7 @@
                 Van egy üres keret is, amely üres kézzel történő támadást jelent. A szezonális fegyverek nem jelennek meg a Pincében.             
             </div>
             <div class="weapon_text"> 
-                Ha szeretnél megjegyzést tenni a fegyverre, kérlek <a class="weapon_change" href="index.php?page=weapon_comment&lang='.$_SESSION['lang'].'">kattincs ide</a>.
+                Ha szeretnél megjegyzést tenni a fegyverre, kérlek <a class="weapon_change" href="index.php?page=weapon_comment&lang='.$_SESSION['lang'].'">kattints ide</a>.
             </div>
         ',
 
@@ -87,7 +87,7 @@
                 Minden fegyvernek a megjegyzését megtalálod itt, oszd meg a véleményeidet nyugodtan és legyetek kultúráltak!
             </div>
             <div class="weapon_text"> 
-                Ha szeretnél fegyvert keresni, kérlek <a class="weapon_change" href="index.php?page=weapon_table&lang='.$_SESSION['lang'].'">kattincs ide</a>.
+                Ha szeretnél fegyvert keresni, kérlek <a class="weapon_change" href="index.php?page=weapon_table&lang='.$_SESSION['lang'].'">kattints ide</a>.
             </div>
         ',
 
@@ -110,7 +110,7 @@
         "crit_chance" => "Kritikus Esély",
         "inaccuracy" => "Pontatlanság",
 
-        /* =========== CHARACTER PAGE =========== */
+        /* ===================== CHARACTER PAGE ===================== */
         "character_header" =>
         '
             <div class="character_title">A karakter fejlesztése a következő bónuszokat biztosítja:</div>
@@ -247,7 +247,7 @@
         "element_envoy_price" => "Echo Amber-el aktiválni",
         "element_envoy_buff" => "Immun a tűzre, kevesebb robbanást okoz, és növeli az ellenség tűzkárát. Immun a lefagyáshoz és extra fagyási időt tesz az ellenségeknek.",
 
-        /* =========== SIGN IN/UP PAGE =========== */
+        /* ===================== SIGN IN/UP PAGE ===================== */
         "signin" => "Bejelentkezés",
         "signup" => "Regisztráció",
         "username" => "Felhasználó név",
@@ -268,7 +268,7 @@
         "wrong_email_or_password" => "Hibás email vagy jelszó!",
         "user_not_exist" => "Nem létezik ilyen felhasználó!",
 
-        /* =========== SEND EMAIL =========== */
+        /* ===================== SEND EMAIL ===================== */
         "hi" => "Szia ",
         "comma" => ",",
         "log_in_now" =>
@@ -292,7 +292,7 @@
         ',
         "subject" => "Köszönöm, hogy regisztráltál!",
 
-        /* =========== COPYRIGHT =========== */
+        /* ===================== COPYRIGHT ===================== */
         "copyright" => "&copy; " . date("Y") . ". - Minden jog fenntartva!",
     );
 ?>

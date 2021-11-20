@@ -1,5 +1,5 @@
 <?php
-
+/* ===================== WEAPON OPTIONS ===================== */
 echo $lang['comment_header'] .
 '
 <div class="wrapper">
@@ -33,7 +33,7 @@ echo
     </form>
 ';
 
-/* =========== INSERT COMMENT INTO DATABASE =========== */
+/* ===================== INSERT COMMENT INTO DATABASE ===================== */
 if(isset($_POST['comment_button']))
 {
     $comment = mysqli_real_escape_string($l, filter_var($_POST["comment"],FILTER_SANITIZE_SPECIAL_CHARS));
@@ -58,7 +58,7 @@ if(isset($_POST['comment_button']))
 </form>
 <?php
 
-/* =========== COMMENT FILTER =========== */
+/* ===================== COMMENT FILTER ===================== */
 if(isset($_POST['filter_button']))
 {
     $weapon = mysqli_real_escape_string($l, filter_var($_POST["filter_data"],FILTER_SANITIZE_SPECIAL_CHARS));

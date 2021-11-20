@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (   
-        /* =========== MENU =========== */
+        /* ===================== MENU ===================== */
         "title" => "元气骑士",
         "home" => "主页",
         "weapon" => "武器",
@@ -13,7 +13,7 @@
         "lang_hu" => "匈牙利语",
         "lang_cn" => "中文",
 
-        /* =========== HOME PAGE =========== */
+        /* ===================== HOME PAGE ===================== */
         "home_page"=>
         '
         <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">补丁说明</a></h1>
@@ -59,7 +59,7 @@
             </ul>
         ',
         
-        /* =========== WEAPON PAGE =========== */
+        /* ===================== WEAPON PAGE ===================== */
         "weapon_header" =>
         '
             <div class="weapon_title">概述</div>
@@ -110,7 +110,7 @@
         "crit_chance" => "暴击率",
         "inaccuracy" => "偏移率",
 
-        /* =========== CHARACTER PAGE =========== */
+        /* ===================== CHARACTER PAGE ===================== */
         "character_header" =>
         '
             <div class="character_title">升级角色会给予以下效果：</div>
@@ -247,7 +247,7 @@
         "element_envoy_price" => "维度指引手册解锁",
         "element_envoy_buff" => "降低爆炸伤害并免疫火焰，对敌人火焰伤害提升，免疫冰冻对敌人的冰冻时间增加[角色限定]。",
         
-        /* =========== SIGN IN/UP PAGE =========== */
+        /* ===================== SIGN IN/UP PAGE ===================== */
         "signin" => "登录",
         "signup" => "注册",
         "username" => "用户名",
@@ -268,7 +268,7 @@
         "wrong_email_or_password" => "错误邮箱或密码！",
         "user_not_exist" => "用户不存在！",
         
-        /* =========== SEND EMAIL =========== */
+        /* ===================== SEND EMAIL ===================== */
         "hi" => "你好 ",
         "comma" => "，",
         "log_in_now" =>
@@ -292,7 +292,7 @@
         ',
         "subject" => "感谢您的注册",
 
-        /* =========== COPYRIGHT =========== */
+        /* ===================== COPYRIGHT ===================== */
         "copyright" => "&copy; " . date("Y") . ". - 曲奇君有限公司 版权所有",
     );
 ?>

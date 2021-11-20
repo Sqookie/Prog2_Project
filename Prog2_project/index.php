@@ -6,9 +6,6 @@
 
 <?php
     include "config.php";
-
-    $curr_lang = $_SESSION['lang'];
-    $curr_page = $_SESSION['page'];
 ?> 
 
 <!doctype html>
@@ -23,7 +20,7 @@
         <title><?php echo $lang['title'] ?></title>
     </head>
 <body>
-    <!-- =========== NAVIGATION BAR =========== -->
+    <!-- ===================== NAVIGATION BAR ===================== -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.php?page=home&lang=<?php echo $curr_lang ?>">
@@ -36,7 +33,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <?php
-                /* =========== HOME PAGE =========== */
+                /* ===================== HOME PAGE ===================== */
                 if($_GET['page'] == 'home')
                 {
                     echo
@@ -55,10 +52,10 @@
                         </li>
                     ';
                 }
-                /* =========== BEFORE SIGN IN =========== */
+                /* ===================== BEFORE SIGN IN ===================== */
                 if($_SESSION['signedin'] != 'yes')
                 {
-                    /* =========== SIGN IN PAGE =========== */
+                    /* ===================== SIGN IN PAGE ===================== */
                     if($_GET['page'] == 'signin')
                     {
                         echo
@@ -68,7 +65,7 @@
                             </li>
                         ';
                     }
-                    /* =========== SIGN UP PAGE =========== */
+                    /* ===================== SIGN UP PAGE ===================== */
                     else if($_GET['page'] == 'signup')
                     {
                         echo
@@ -78,7 +75,7 @@
                             </li>
                         ';
                     }
-                    /* =========== SIGN IN PAGE =========== */
+                    /* ===================== SIGN IN PAGE ===================== */
                     else
                     {
                         echo
@@ -89,10 +86,10 @@
                         ';
                     }
                 }
-                /* =========== AFTER SIGN IN =========== */
+                /* ===================== AFTER SIGN IN ===================== */
                 else
                 {  
-                    /* =========== WEAPON TABLE =========== */
+                    /* ===================== WEAPON TABLE ===================== */
                     if($_GET['page'] == 'weapon_table')
                     {
                         echo
@@ -102,7 +99,7 @@
                             </li>
                         ';
                     }
-                    /* =========== WEAPON COMMENT SECTION =========== */
+                    /* ===================== WEAPON COMMENT SECTION ===================== */
                     else if ($_GET['page'] == 'weapon_comment')
                     {
                         echo
@@ -112,7 +109,7 @@
                             </li>
                         ';
                     }
-                    /* =========== WEAPON TABLE =========== */
+                    /* ===================== WEAPON TABLE ===================== */
                     else
                     {
                         echo
@@ -122,7 +119,7 @@
                             </li>
                         ';
                     }
-                    /* =========== CHARACTER PAGE =========== */
+                    /* ===================== CHARACTER PAGE ===================== */
                     if($_GET['page'] == 'character')
                     {
                         echo
@@ -141,7 +138,7 @@
                             </li>
                         ';
                     }
-                    /* =========== SIGN OUT PAGE =========== */
+                    /* ===================== SIGN OUT PAGE ===================== */
                     if($_GET['page'] == 'signout')
                     {
                         echo
@@ -161,7 +158,7 @@
                         ';
                     }
                 }
-                /* =========== LANGUAGE DROPDOWN MENU =========== */
+                /* ===================== LANGUAGE DROPDOWN MENU ===================== */
                 echo
                 '
                     <li class="nav-item dropdown">
@@ -233,9 +230,10 @@
 		
 	</div>
 
-    <!-- =========== COPYRIGHT FOOTER =========== -->
+    <!-- ===================== COPYRIGHT FOOTER ===================== -->
     <footer><?php echo $lang['copyright'] ?></footer>
 
+    <!-- ===================== SCRIPTS ===================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

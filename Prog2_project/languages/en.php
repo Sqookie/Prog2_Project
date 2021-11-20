@@ -1,7 +1,7 @@
 <?php
     $lang = array
     (
-        /* =========== MENU =========== */
+        /* ===================== MENU ===================== */
         "title" => "Soul Knight",
         "home" => "Home",
         "weapon" => "Weapon",
@@ -13,7 +13,7 @@
         "lang_hu" => "Hungarian",
         "lang_cn" => "Chinese",
 
-        /* =========== HOME PAGE =========== */
+        /* ===================== HOME PAGE ===================== */
         "home_page"=>
         '
             <h1><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Patch notes</a></h1>
@@ -59,7 +59,7 @@
             </ul>
         ',
         
-        /* =========== WEAPON PAGE =========== */
+        /* ===================== WEAPON PAGE ===================== */
         "weapon_header" =>
         '
             <div class="weapon_title">Overview</div>
@@ -111,7 +111,7 @@
         "crit_chance" => "Crit Chance",
         "inaccuracy" => "Inaccuracy",
 
-        /* =========== CHARACTER PAGE =========== */
+        /* ===================== CHARACTER PAGE ===================== */
         "character_header" =>
         '
             <div class="character_title">Leveling up a character gives the following bonuses:</div>
@@ -248,7 +248,7 @@
         "element_envoy_price" => "Unlock with Echo Amber",
         "element_envoy_buff" => "Immune to fire, take less explosion damage, and increase fire damage to enemies. Immune to freeze, and apply extra freeze time to enemies.",
 
-        /* =========== SIGN IN/UP PAGE =========== */
+        /* ===================== SIGN IN/UP PAGE ===================== */
         "signin" => "Sign in",
         "signup" => "Sign up",
         "username" => "Username",
@@ -269,7 +269,7 @@
         "wrong_email_or_password" => "Wrong email or password!",
         "user_not_exist" => "User does not exist!",
 
-        /* =========== SEND EMAIL =========== */
+        /* ===================== SEND EMAIL ===================== */
         "hi" => "Hi ",
         "comma" => ",",
         "log_in_now" =>
@@ -293,7 +293,7 @@
         ',
         "subject" => "Thank you for your registration!",
 
-        /* =========== COPYRIGHT =========== */
+        /* ===================== COPYRIGHT ===================== */
         "copyright" => "&copy; " . date("Y") . ". - All rights reserved!",
     );
 ?>

@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    /* =========== LANGUAGES =========== */
+    /* ===================== LANGUAGES ===================== */
     if(!isset($_SESSION['lang']))
         $_SESSION['lang'] = "en";
     else if(isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang']))
@@ -16,7 +16,7 @@
 
     require_once "languages/" . $_SESSION['lang']  . ".php";
 
-    /* =========== PAGES =========== */
+    /* ===================== PAGES ===================== */
     if(!isset($_SESSION['page']))
         $_SESSION['page'] = "home";
     else if(isset($_GET['page']) && $_SESSION['page'] != $_GET['page'] && !empty($_GET['page']))
@@ -40,7 +40,7 @@
     $curr_lang = $_SESSION['lang'];
     $curr_page = $_SESSION['page'];
 
-    /* =========== URL CHECK =========== */
+    /* ===================== URL CHECK ===================== */
     $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     $url_components = parse_url($url);
     parse_str($url_components['query'], $url_param);
@@ -65,7 +65,7 @@
             die(header("Refresh: 0, index.php?page=weapon_table&lang=$curr_lang"));
     }
 
-    /* =========== LANGUAGE CHECK =========== */
+    /* ===================== LANGUAGE CHECK ===================== */
     if($url_param['lang'] != $curr_lang)
     {
         die(header("Refresh: 0, index.php?page=$curr_page&lang=$curr_lang"));

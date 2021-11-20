@@ -1,7 +1,7 @@
 <div class="container">
 
 <?php
-    /* =========== SIGN UP WITH SENDGRID EMAIL NOTIFICATION =========== */
+    /* ===================== SIGN UP WITH SENDGRID EMAIL NOTIFICATION ===================== */
     if(isset($_POST["signupbutton"]))
 	{
 		$name = mysqli_real_escape_string($l, filter_var($_POST["name"],FILTER_SANITIZE_SPECIAL_CHARS));
@@ -44,7 +44,7 @@
 			
 				echo '<script>alert("'. $lang['successful_registration'] .'")</script>';
 				
-				/* =========== EMAIL NOTIFICATION =========== */
+				/* ===================== EMAIL NOTIFICATION ===================== */
 				$body = $lang['hi'] . '<strong>' . $name . '</strong>' . $lang['comma'] . $lang['log_in_now'];
 				$subject = $lang['subject'];
 
@@ -102,20 +102,19 @@
 		}
 	}
 ?>
-
-<!-- =========== SIGN UP FORM =========== -->
-<div class="row signin-page form">
-	<div class="col-md-4" id="signup">
-		<h1><?php echo $lang['signup'] ?></h1>
-		<form method="post">
-			<input class="sign_form_input" tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" required>
-			<input class="sign_form_input" type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
-			<input class="sign_form_input" type="password" name="password1" placeholder="<?php echo $lang['password'] ?>" required>
-			<input class="sign_form_input" type="password" name="password2" placeholder="<?php echo $lang['password_again'] ?>" required>
-			<input class="sign_form_input" type="text" name="verify_question" placeholder="123 + 110 = ?" required>
-			<input class="signin_submit" type="submit" name="signupbutton" value="<?php echo $lang['signup'] ?>">
-			<p><?php echo $lang['signed_up'] ?><a href="index.php?page=signin&lang=<?php echo $curr_lang ?>"><?php echo $lang['sign_in_here'] ?></a></p>
-		</form>
+	<!-- ===================== SIGN UP FORM ===================== -->
+	<div class="row signin-page form">
+		<div class="col-md-4" id="signup">
+			<h1><?php echo $lang['signup'] ?></h1>
+			<form method="post">
+				<input class="sign_form_input" tpye="text" name="name" placeholder="<?php echo $lang['username'] ?>" required>
+				<input class="sign_form_input" type="email" name="email" placeholder="<?php echo $lang['email'] ?>" required>
+				<input class="sign_form_input" type="password" name="password1" placeholder="<?php echo $lang['password'] ?>" required>
+				<input class="sign_form_input" type="password" name="password2" placeholder="<?php echo $lang['password_again'] ?>" required>
+				<input class="sign_form_input" type="text" name="verify_question" placeholder="123 + 110 = ?" required>
+				<input class="signin_submit" type="submit" name="signupbutton" value="<?php echo $lang['signup'] ?>">
+				<p><?php echo $lang['signed_up'] ?><a href="index.php?page=signin&lang=<?php echo $curr_lang ?>"><?php echo $lang['sign_in_here'] ?></a></p>
+			</form>
+		</div>
 	</div>
-</div>
 </div>

@@ -1,12 +1,10 @@
-<div class="container-fluid">
-
 <?php
 
-/* =========== WEAPON HEADER =========== */
+/* ===================== WEAPON HEADER ===================== */
 echo $lang['weapon_header'];
 
 ?>
-<!-- =========== SEARCH BAR, CHANGE PAGE BUTTON =========== -->
+<!-- ===================== SEARCH BAR, CHANGE PAGE BUTTON ===================== -->
 <div>
     <form method="post">
         <input type="text" name="weapon_name" class="search_bar" value="<?php if(isset($_POST['weapon_search'])) {echo $_POST['weapon_name'];} ?>" placeholder="<?php echo $lang['search_for_weapon'] ?>">
@@ -17,7 +15,7 @@ echo $lang['weapon_header'];
 <br>
 
 <?php
-/* =========== WEAPON TABLE =========== */
+/* ===================== WEAPON TABLE ===================== */
 echo
 '
 <div style="overflow-y: hidden; overflow-x: auto;">
@@ -25,7 +23,7 @@ echo
         <tbody>
             <tr>
 ';
-                /* =========== WEAPON SEARCHING =========== */
+                /* ===================== WEAPON SEARCHING ===================== */
                 if(isset($_POST['weapon_search']))
                 {
                     $weapon = mysqli_real_escape_string($l, filter_var($_POST["weapon_name"],FILTER_SANITIZE_SPECIAL_CHARS));
@@ -137,5 +135,3 @@ echo
 ';
 
 ?>
-
-</div>

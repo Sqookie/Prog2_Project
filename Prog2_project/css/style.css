@@ -1,4 +1,4 @@
-/* =========== INDEX =========== */
+/* ===================== INDEX ===================== */
 html
 {
 	height: 100%;
@@ -48,7 +48,7 @@ a:hover
 
 .container-fluid
 {
-	padding: 0px;
+	padding: 2px;
 }
 
 footer
@@ -85,7 +85,7 @@ footer:hover
 	color:white !important;
 }
 
-/* =========== HOME PAGE =========== */
+/* ===================== HOME PAGE ===================== */
 .version_title
 {
 	color:white;
@@ -123,7 +123,7 @@ ul.home_ul > li:hover
 	font-size: 17px;
 }
 
-/* =========== WEAPON PAGE =========== */
+/* ===================== WEAPON PAGE ===================== */
 .weapon_title
 {
 	color: white;
@@ -469,7 +469,7 @@ ul.home_ul > li:hover
 	padding: 35px;
 }
 
-/* =========== CHARACTER PAGE =========== */
+/* ===================== CHARACTER PAGE ===================== */
 .CharacterSize
 {
 	width: 55px;
@@ -554,7 +554,7 @@ table > tbody > tr > td:hover
 	color: rgb(148, 148, 148);
 }
 
-/* =========== SIGN IN/UP PAGE =========== */
+/* ===================== SIGN IN/UP PAGE ===================== */
 .signup-box
 {
 	width: 360px;
@@ -646,7 +646,7 @@ p a:hover, .weapon_change:hover
 	color: rgb(73, 158, 158);
 }
 
-/* =========== DROPDOWN MENU =========== */
+/* ===================== DROPDOWN MENU ===================== */
 .item_active
 {
 	background-color: #212529 !important;
